@@ -45,3 +45,4 @@ Para que la app encuentre la guía y los ejemplos, copia `estilo/` dentro de `AD
 | Tema | Preguntas | Citas verificadas |
 |---|---|---|
 | Gestión 02 · Ley 47/2003 General Presupuestaria | 30 | 30/30 |
+| Gestión 01 · RDLeg 8/2015 Ley General de la Seguridad Social | 30 | 30/30 |
