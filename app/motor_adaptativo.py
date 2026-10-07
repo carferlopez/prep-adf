@@ -341,6 +341,7 @@ def init_db() -> None:
     conn.close()
 
     sincronizar_carpetas_adif()
+    cargar_ejemplos_oficiales()
     poblar_preguntas_semilla_adif()
 
 
@@ -820,6 +821,125 @@ def seleccionar_siguiente_objetivo(filtro_bloque: str = "PERFIL_GESTION", filtro
     }
 
 
+def _buscar_recurso_estilo(nombre: str) -> Path | None:
+    """Busca un fichero de estilo junto a la app o en la carpeta estilo/ del repositorio."""
+    for candidato in (BASE_DIR / nombre, BASE_DIR / "estilo" / nombre, BASE_DIR.parent / "estilo" / nombre):
+        if candidato.exists():
+            return candidato
+    return None
+
+
+def _cargar_guia_estilo() -> str:
+    ruta = _buscar_recurso_estilo("adn_tribunal.md")
+    if not ruta:
+        return "No disponible."
+    texto = ruta.read_text(encoding="utf-8")
+    # Solo las secciones normativas; los ejemplos ya van aparte en el prompt
+    corte = texto.find("## Ejemplos reales")
+    return texto[:corte].strip() if corte != -1 else texto.strip()
+
+
+def _normalizar_texto(texto: str) -> str:
+    return re.sub(r"\s+", " ", norm_nfc(texto)).strip().lower()
+
+
+def _clave_norma(documento: str) -> str | None:
+    """'02 Ley 47_2003, de 26 de...' -> '47/2003'; sirve para buscar preguntas oficiales de la misma norma."""
+    m = re.search(r"(\d{1,4})[_/\-](\d{4})", documento)
+    return f"{m.group(1)}/{m.group(2)}" if m else None
+
+
+def _ejemplos_tribunal_para(cur: sqlite3.Cursor, documento: str, total: int = 4) -> list[dict[str, Any]]:
+    """Prioriza preguntas oficiales de la misma norma y completa con preguntas oficiales al azar."""
+    ejemplos: list[dict[str, Any]] = []
+    clave = _clave_norma(documento)
+    if clave:
+        cur.execute(
+            "SELECT id, documento_origen, enunciado, patron_trampa FROM adn_tribunal "
+            "WHERE enunciado LIKE ? ORDER BY documento_origen LIKE 'OFICIAL%' DESC, RANDOM()",
+            (f"%{clave}%",),
+        )
+        # El LIKE de «8/2015» también encuentra «38/2015»: se filtra con límite de número
+        exacta = re.compile(rf"(?<!\d){re.escape(clave)}")
+        ejemplos = [dict(r) for r in cur.fetchall() if exacta.search(r["enunciado"])][:total]
+    if len(ejemplos) < total:
+        ya = [e["id"] for e in ejemplos] or [-1]
+        cur.execute(
+            f"SELECT id, documento_origen, enunciado, patron_trampa FROM adn_tribunal "
+            f"WHERE id NOT IN ({','.join('?' * len(ya))}) "
+            "ORDER BY documento_origen LIKE 'OFICIAL%' DESC, RANDOM() LIMIT ?",
+            (*ya, total - len(ejemplos)),
+        )
+        ejemplos += [dict(r) for r in cur.fetchall()]
+    return ejemplos
+
+
+def _motivo_rechazo_pregunta(data: dict[str, Any], contenido_literal: str) -> str | None:
+    """Control de calidad de una pregunta generada. Devuelve el motivo de rechazo o None si es válida."""
+    opciones = data.get("opciones")
+    indice = data.get("indice_correcta")
+    if not isinstance(opciones, list) or len(opciones) != 4 or not all(isinstance(o, str) and o.strip() for o in opciones):
+        return "no tiene 4 opciones"
+    if not isinstance(indice, int) or not 0 <= indice < 4:
+        return "indice_correcta inválido"
+    if len({_normalizar_texto(o) for o in opciones}) < 4:
+        return "opciones repetidas"
+
+    # La cita debe estar copiada del precepto (se admiten varios fragmentos separados por […] o ...)
+    cita = re.sub(r"^[\"«“\s]+|[\"»”\s]+$", "", data.get("cita_literal_boe", ""))
+    fuente = _normalizar_texto(contenido_literal)
+    fragmentos = [f for f in re.split(r"\s*(?:\[…\]|\[\.\.\.\]|…|\.\.\.)\s*", cita) if len(f) > 15]
+    if not fragmentos or any(_normalizar_texto(f).strip("\"«»“” ") not in fuente for f in fragmentos):
+        return "cita_literal_boe no aparece en el texto del precepto"
+
+    enunciado = _normalizar_texto(data.get("enunciado", ""))
+    correcta = _normalizar_texto(opciones[indice]).rstrip(".")
+    if len(correcta) > 25 and correcta in enunciado:
+        return "el enunciado revela la respuesta"
+
+    # Una correcta desproporcionadamente larga regala la respuesta
+    largo_distractores = max(len(o) for i, o in enumerate(opciones) if i != indice)
+    if len(opciones[indice]) > 2.5 * largo_distractores and len(opciones[indice]) > 80:
+        return "la opción correcta es mucho más larga que los distractores"
+    return None
+
+
+def cargar_ejemplos_oficiales() -> int:
+    """Carga en adn_tribunal las preguntas oficiales de estilo/ejemplos.json (con su respuesta de plantilla)."""
+    ruta = _buscar_recurso_estilo("ejemplos.json")
+    if not ruta:
+        return 0
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute("SELECT COUNT(*) FROM adn_tribunal WHERE documento_origen LIKE 'OFICIAL%'")
+    if cur.fetchone()[0] > 0:
+        conn.close()
+        return 0
+
+    nuevos = 0
+    for p in json.loads(ruta.read_text(encoding="utf-8")):
+        if not p.get("correcta"):
+            continue
+        indice = "ABCD".index(p["correcta"])
+        texto = p["enunciado"] + "\n" + "\n".join(
+            f"{'abcd'[i]}) {o}" for i, o in enumerate(p["opciones"])
+        ) + f"\nRespuesta oficial: {p['correcta']}"
+        negativa = bool(re.search(r"\bNO\b|INCORRECTA", p["enunciado"]))
+        patron = (
+            "Formulación negativa: tres opciones literales de la enumeración legal y una ajena verosímil."
+            if negativa
+            else f"Correcta: «{p['opciones'][indice]}». Los distractores mantienen la estructura y cambian cifra, órgano o ámbito."
+        )
+        cur.execute(
+            "INSERT INTO adn_tribunal (documento_origen, enunciado, patron_trampa) VALUES (?, ?, ?)",
+            (f"OFICIAL {p['convocatoria']} - examen {p.get('codigo_examen') or 's/c'} - n.º {p['numero']}", texto, patron),
+        )
+        nuevos += 1
+    conn.commit()
+    conn.close()
+    return nuevos
+
+
 def generar_pregunta_con_gemini(unidad: dict[str, Any], es_refuerzo: int) -> dict[str, Any] | None:
     """
     Genera en vivo una pregunta calcada al estilo del Tribunal de ADIF (PNI26/03)
@@ -833,8 +953,7 @@ def generar_pregunta_con_gemini(unidad: dict[str, Any], es_refuerzo: int) -> dic
 
     conn = get_db_connection()
     cur = conn.cursor()
-    cur.execute("SELECT documento_origen, enunciado, patron_trampa FROM adn_tribunal ORDER BY RANDOM() LIMIT 3")
-    ejemplos_tribunal = [dict(r) for r in cur.fetchall()]
+    ejemplos_tribunal = _ejemplos_tribunal_para(cur, unidad["documento"])
 
     cur.execute("SELECT enunciado FROM banco_preguntas WHERE unidad_id = ?", (unidad["id"],))
     preguntas_previas = [r["enunciado"] for r in cur.fetchall()]
@@ -875,7 +994,10 @@ Precepto / Apartado: {unidad['titulo_unidad']}
 Texto literal:
 {unidad['contenido_literal']}
 
-=== PREGUNTAS REALES DE EXÁMENES ANTERIORES DE ADIF (2021-2025) COMO MOLDE DE ESTILO ===
+=== GUÍA DE ESTILO DEL TRIBUNAL ADIF (análisis de 559 preguntas oficiales 2022-2025) ===
+{_cargar_guia_estilo()}
+
+=== PREGUNTAS REALES DE EXÁMENES ANTERIORES DE ADIF COMO MOLDE DE ESTILO ===
 {ejemplos_txt}
 
 === PREGUNTAS YA REALIZADAS SOBRE ESTE ARTÍCULO (PROHIBIDO REPETIRLAS O PARAFRASEARLAS) ===
@@ -922,11 +1044,7 @@ Devuelve ÚNICAMENTE un JSON válido con este esquema:
             if not response.text:
                 continue
             data = json.loads(response.text)
-            if (
-                isinstance(data.get("opciones"), list)
-                and len(data["opciones"]) == 4
-                and isinstance(data.get("indice_correcta"), int)
-            ):
+            if _motivo_rechazo_pregunta(data, unidad["contenido_literal"]) is None:
                 import random
                 
                 opciones_orig = data["opciones"]
