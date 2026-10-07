@@ -10,6 +10,7 @@ Preparación de la OEP 2026 de ADIF (Técnico: Gestión y Comunicación). Incluy
 | `estilo/adn_tribunal.md` | Guía de estilo del Tribunal, sacada de 559 preguntas oficiales de 2022 a 2025. |
 | `estilo/ejemplos.json` | Corpus de esas preguntas oficiales, con la respuesta de la plantilla correctora cuando existe. |
 | `banco/*.json` | Preguntas redactadas y revisadas por tema, cada una con su cita literal del BOE. |
+| `salidas/` | Único lugar donde se guarda todo lo generado (simulacros, exámenes). Índice en `salidas/LEEME.md`. |
 | `scripts/` | Extracción de exámenes, validación del banco e importación en la app. |
 
 ## Uso
