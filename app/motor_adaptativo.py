@@ -144,7 +144,7 @@ def trocear_documento_adif(bloque_temario: str, documento_nombre: str, texto_bru
     unidades: list[dict[str, str]] = []
 
     patron_articulo = re.compile(
-        r"(?m)^(?P<cabecera>(?:Artículo|Art\.)\s+(?:\d+|único|primero|segundo|tercero|cuarto|quinto|sexto|séptimo|octavo|noveno|décimo|undécimo|duodécimo|decimotercero|decimocuarto|decimoquinto|decimosexto|decimoséptimo|decimoctavo|decimonoveno|vigésimo)[\w\s\.ºª\-]*)"
+        r"(?m)^(?P<cabecera>(?:Artículo|Art\.)\s+(?:\d+|único|primero|segundo|tercero|cuarto|quinto|sexto|séptimo|octavo|noveno|décimo|undécimo|duodécimo|decimotercero|decimocuarto|decimoquinto|decimosexto|decimoséptimo|decimoctavo|decimonoveno|vigésimo)[\w \t\.ºª\-]*)"
     )
     matches = list(patron_articulo.finditer(texto))
 

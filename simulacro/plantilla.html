@@ -1,0 +1,182 @@
+<title>__TITULO__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: cuadernillo de examen en una columna estrecha + barra inferior fija con la hoja de respuestas */
+:root{
+  --bg:#f3f5f4; --paper:#ffffff; --ink:#18221f; --muted:#5b6964; --line:#d5ddda;
+  --accent:#c2410c; --accent-soft:#fdeee5;
+  --ok:#17784a; --ok-soft:#e3f4ea; --bad:#b42318; --bad-soft:#fde8e6; --blank:#8a6d1a;
+  --display:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101614; --paper:#17201d; --ink:#e4ebe8; --muted:#97a6a0; --line:#2b3733;
+  --accent:#f08a4b; --accent-soft:#3a2418;
+  --ok:#4cc38a; --ok-soft:#14301f; --bad:#f2735f; --bad-soft:#3a1a16; --blank:#d6b25a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101614; --paper:#17201d; --ink:#e4ebe8; --muted:#97a6a0; --line:#2b3733;
+  --accent:#f08a4b; --accent-soft:#3a2418;
+  --ok:#4cc38a; --ok-soft:#14301f; --bad:#f2735f; --bad-soft:#3a1a16; --blank:#d6b25a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);padding-inline:16px;padding-block:0 120px}
+.wrap{max-width:760px;margin:0 auto}
+header.cab{padding-block:28px 18px;border-bottom:2px solid var(--ink);display:grid;gap:10px}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:800 clamp(26px,5vw,38px)/1.05 var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font:400 13px/1.4 var(--mono);color:var(--muted)}
+.meta b{color:var(--ink);font-weight:600}
+.instr{font-size:14px;color:var(--muted);max-width:65ch;margin:0}
+.resultado{margin-block:20px;padding:18px;border:2px solid var(--ink);background:var(--paper);display:grid;gap:12px}
+.resultado[hidden]{display:none}
+.res-top{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 20px}
+.nota{font:800 44px/1 var(--display);font-variant-numeric:tabular-nums}
+.nota small{font:600 16px var(--mono);color:var(--muted)}
+.cifras{display:flex;flex-wrap:wrap;gap:6px 16px;font:400 13px var(--mono);font-variant-numeric:tabular-nums}
+.cifras .a{color:var(--ok)} .cifras .e{color:var(--bad)} .cifras .b{color:var(--blank)}
+.formula{font:400 12px var(--mono);color:var(--muted)}
+ol.preguntas{list-style:none;margin:0;padding:0;display:grid;gap:0}
+li.q{padding-block:22px;border-bottom:1px solid var(--line);display:grid;gap:12px}
+.q-head{display:flex;gap:12px;align-items:flex-start}
+.num{font:700 15px/1.5 var(--mono);min-width:2.2ch;font-variant-numeric:tabular-nums}
+.enun{margin:0;font-weight:600;min-width:0}
+.art{font:400 11px/1 var(--mono);color:var(--muted);letter-spacing:.04em;margin-left:calc(2.2ch + 12px)}
+.ops{display:grid;gap:6px;margin-left:calc(2.2ch + 12px)}
+.op{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1px solid var(--line);background:var(--paper);cursor:pointer;border-radius:3px;text-align:left;font:inherit;color:inherit;width:100%}
+.op:hover{border-color:var(--muted)}
+.op:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.op .l{font:600 13px/1.55 var(--mono);flex:none}
+.op span:last-child{min-width:0}
+.op[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.corregido .op{cursor:default}
+.corregido .op.ok{border-color:var(--ok);background:var(--ok-soft)}
+.corregido .op.mal{border-color:var(--bad);background:var(--bad-soft)}
+.estado{font:600 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:4px 6px;border-radius:2px;flex:none;margin-left:auto}
+.estado.ok{color:var(--ok);background:var(--ok-soft)} .estado.mal{color:var(--bad);background:var(--bad-soft)} .estado.blanco{color:var(--blank);background:var(--bg);border:1px solid var(--line)}
+details.exp{margin-left:calc(2.2ch + 12px);border-left:3px solid var(--line);padding-left:12px}
+details.exp summary{cursor:pointer;font:600 13px var(--mono);color:var(--muted)}
+details.exp p{margin:8px 0;max-width:65ch}
+blockquote{margin:8px 0;padding:8px 12px;background:var(--paper);border:1px solid var(--line);font-size:14px;font-style:italic}
+.trampas{margin:8px 0 0;padding-left:0;list-style:none;display:grid;gap:4px;font-size:14px}
+.trampas li{display:flex;gap:8px}
+.trampas .l{font:600 12px/1.6 var(--mono);flex:none}
+.barra{position:fixed;left:0;right:0;bottom:0;background:var(--paper);border-top:2px solid var(--ink);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}
+.barra-in{max-width:760px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.hoja{display:flex;flex-wrap:wrap;gap:3px;min-width:0}
+.hoja a{width:22px;height:22px;display:grid;place-items:center;font:600 10px var(--mono);color:var(--muted);border:1px solid var(--line);text-decoration:none;border-radius:2px;font-variant-numeric:tabular-nums}
+.hoja a.r{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.hoja a.ok{background:var(--ok);color:var(--paper);border-color:var(--ok)}
+.hoja a.mal{background:var(--bad);color:var(--paper);border-color:var(--bad)}
+.acciones{display:flex;gap:8px;flex:none}
+button.btn{font:700 14px var(--display);padding:9px 16px;border-radius:3px;border:2px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
+button.btn.sec{background:transparent;color:var(--ink)}
+button.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:520px){.hoja a{width:19px;height:19px;font-size:9px}.ops,.art,details.exp{margin-left:0}}
+@media (prefers-reduced-motion:no-preference){.op{transition:border-color .12s,background .12s}}
+</style>
+
+<div class="wrap">
+  <header class="cab">
+    <div class="eyebrow">__SUB__</div>
+    <h1>__H1__</h1>
+    <div class="meta"><span><b>__N__</b> preguntas</span><span><b>4</b> opciones, una correcta</span><span>corrección <b>A − E/3</b></span><span>citas verificadas contra el BOE</span></div>
+    <p class="instr">Marca una opción por pregunta o déjala en blanco (vuelve a pulsar para desmarcar). Al corregir verás la nota con la fórmula oficial y, en cada pregunta, la cita literal del artículo y por qué cada distractor es falso. Tus respuestas se guardan en este navegador.</p>
+  </header>
+
+  <section class="resultado" id="resultado" hidden aria-live="polite"></section>
+
+  <ol class="preguntas" id="preguntas"></ol>
+</div>
+
+<div class="barra">
+  <div class="barra-in">
+    <nav class="hoja" id="hoja" aria-label="Hoja de respuestas"></nav>
+    <div class="acciones">
+      <button class="btn sec" id="reiniciar" type="button">Reiniciar</button>
+      <button class="btn" id="corregir" type="button">Corregir</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const BANCO = __BANCO__;
+const L = "ABCD";
+const CLAVE = "__CLAVE__";
+let estado = { resp: {}, corregido: false };
+try { const s = JSON.parse(localStorage.getItem(CLAVE) || "null"); if (s) estado = s; } catch (e) {}
+const guardar = () => { try { localStorage.setItem(CLAVE, JSON.stringify(estado)); } catch (e) {} };
+const esc = t => t.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function pintar() {
+  const lista = document.getElementById("preguntas");
+  const hoja = document.getElementById("hoja");
+  lista.innerHTML = ""; hoja.innerHTML = "";
+  let a = 0, e = 0, b = 0;
+  BANCO.preguntas.forEach((p, i) => {
+    const r = estado.resp[p.id];
+    const ok = r === p.indice_correcta;
+    if (estado.corregido) { if (r === undefined) b++; else if (ok) a++; else e++; }
+    const li = document.createElement("li");
+    li.className = "q" + (estado.corregido ? " corregido" : "");
+    li.id = "q" + (i + 1);
+    const etiqueta = !estado.corregido ? "" :
+      r === undefined ? '<span class="estado blanco">En blanco</span>' :
+      ok ? '<span class="estado ok">Acierto</span>' : '<span class="estado mal">Error</span>';
+    li.innerHTML = `
+      <div class="q-head"><span class="num">${i + 1}.</span><p class="enun">${esc(p.enunciado)}</p>${etiqueta}</div>
+      <div class="art">${esc(p.articulo)} · nivel ${p.nivel}</div>
+      <div class="ops" role="group" aria-label="Opciones de la pregunta ${i + 1}">
+        ${p.opciones.map((o, j) => {
+          let cls = "op";
+          if (estado.corregido && j === p.indice_correcta) cls += " ok";
+          else if (estado.corregido && j === r) cls += " mal";
+          return `<button type="button" class="${cls}" id="${p.id}-${j}" data-q="${p.id}" data-j="${j}" aria-pressed="${r === j}" ${estado.corregido ? 'aria-disabled="true"' : ""}><span class="l">${L[j].toLowerCase()})</span><span>${esc(o)}</span></button>`;
+        }).join("")}
+      </div>
+      ${estado.corregido ? `<details class="exp" ${r !== undefined && !ok ? "open" : ""}>
+        <summary>Explicación y cita del BOE</summary>
+        <p>${esc(p.explicacion_detallada)}</p>
+        <blockquote>«${esc(p.cita_literal_boe)}»</blockquote>
+        <ul class="trampas">${p.trampas_por_opcion.map((t, j) => `<li><span class="l">${L[j].toLowerCase()})</span><span>${esc(t)}</span></li>`).join("")}</ul>
+      </details>` : ""}`;
+    lista.appendChild(li);
+    const celda = document.createElement("a");
+    celda.href = "#q" + (i + 1);
+    celda.textContent = i + 1;
+    celda.title = `Pregunta ${i + 1}`;
+    if (estado.corregido) { if (r !== undefined) celda.className = ok ? "ok" : "mal"; }
+    else if (r !== undefined) celda.className = "r";
+    hoja.appendChild(celda);
+  });
+  const res = document.getElementById("resultado");
+  if (estado.corregido) {
+    const neta = a - e / 3;
+    const sobre10 = Math.max(0, neta) / BANCO.preguntas.length * 10;
+    res.hidden = false;
+    res.innerHTML = `
+      <div class="res-top"><span class="nota">${sobre10.toFixed(2).replace(".", ",")} <small>/ 10</small></span>
+      <span class="cifras"><span class="a">${a} aciertos</span><span class="e">${e} errores</span><span class="b">${b} en blanco</span></span></div>
+      <div class="formula">Puntuación neta: ${a} − ${e}/3 = ${neta.toFixed(2).replace(".", ",")} de ${BANCO.preguntas.length}. Los errores aparecen desplegados abajo.</div>`;
+  } else res.hidden = true;
+  document.getElementById("corregir").textContent = estado.corregido ? "Volver a intentar" : "Corregir";
+}
+
+document.getElementById("preguntas").addEventListener("click", ev => {
+  const b = ev.target.closest("button.op");
+  if (!b || estado.corregido) return;
+  const id = b.dataset.q, j = Number(b.dataset.j);
+  if (estado.resp[id] === j) delete estado.resp[id]; else estado.resp[id] = j;
+  guardar(); pintar();
+  document.getElementById(`${id}-${j}`)?.focus();
+});
+document.getElementById("corregir").addEventListener("click", () => {
+  if (estado.corregido) estado = { resp: {}, corregido: false };
+  else estado.corregido = true;
+  guardar(); pintar(); window.scrollTo({ top: 0, behavior: "smooth" });
+});
+document.getElementById("reiniciar").addEventListener("click", () => {
+  estado = { resp: {}, corregido: false }; guardar(); pintar(); window.scrollTo({ top: 0 });
+});
+pintar();
+</script>
