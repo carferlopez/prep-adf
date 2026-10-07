@@ -1,0 +1,667 @@
+{
+  "documento": "02 Ley 47_2003, de 26 de noviembre, General Presupuestaria Título I, Título II, Título V, Título VI, Título VII.pdf",
+  "bloque_temario": "TEMARIO ESPECÍFICO TÉCNICO GESTIÓN",
+  "norma": "Ley 47/2003, de 26 de noviembre, General Presupuestaria",
+  "preguntas": [
+    {
+      "id": "LGP-001",
+      "articulo": "Artículo 1",
+      "nivel": 1,
+      "trampa_objetivo": "Objeto de la LGP frente a otras normas de Hacienda",
+      "enunciado": "Según la Ley 47/2003, de 26 de noviembre, General Presupuestaria, ¿cuál es el objeto de dicha ley?",
+      "opciones": [
+        "La regulación del régimen presupuestario, económico-financiero, de contabilidad, intervención y de control financiero del sector público estatal.",
+        "La regulación del régimen presupuestario y de estabilidad financiera del conjunto de las Administraciones Públicas.",
+        "La regulación del régimen jurídico del patrimonio y de la contratación de las entidades del sector público estatal.",
+        "La regulación del control externo de las cuentas y de la gestión económica del Estado y del sector público."
+      ],
+      "indice_correcta": 0,
+      "cita_literal_boe": "Esta ley tiene por objeto la regulación del régimen presupuestario, económico-financiero, de contabilidad, intervención y de control financiero del sector público estatal.",
+      "explicacion_detallada": "El artículo 1 delimita la LGP a cinco materias del sector público estatal: presupuesto, régimen económico-financiero, contabilidad, intervención y control financiero. La estabilidad del conjunto de las Administraciones es materia de la LO 2/2012; el patrimonio y la contratación tienen normativa específica (art. 4.2); y el control externo es del Tribunal de Cuentas.",
+      "trampas_por_opcion": [
+        "Correcta: reproduce literalmente el artículo 1.",
+        "Mezcla la LGP con la LO 2/2012 de Estabilidad Presupuestaria y amplía el ámbito a todas las Administraciones Públicas.",
+        "Patrimonio y contratación se someten a su normativa específica según el artículo 4.2.",
+        "El control externo corresponde al Tribunal de Cuentas (art. 140.1), no es el objeto de la LGP."
+      ]
+    },
+    {
+      "id": "LGP-002",
+      "articulo": "Artículo 2",
+      "nivel": 2,
+      "trampa_objetivo": "Exclusión de las Cortes Generales del ámbito de la LGP",
+      "enunciado": "Según el artículo 2 de la Ley 47/2003, General Presupuestaria, ¿a cuál de los siguientes NO será de aplicación dicha ley por gozar de autonomía presupuestaria de acuerdo con lo establecido en el artículo 72 de la Constitución?",
+      "opciones": [
+        "A las universidades públicas no transferidas.",
+        "A las autoridades administrativas independientes.",
+        "A los consorcios adscritos a la Administración General del Estado.",
+        "A las Cortes Generales."
+      ],
+      "indice_correcta": 3,
+      "cita_literal_boe": "esta Ley no será de aplicación a las Cortes Generales, que gozan de autonomía presupuestaria de acuerdo con lo establecido en el artículo 72 de la Constitución",
+      "explicacion_detallada": "Las universidades no transferidas, las autoridades administrativas independientes y los consorcios adscritos a la AGE integran el sector público institucional estatal (art. 2.2), así que la LGP sí se les aplica. La única exclusión expresa son las Cortes Generales, por su autonomía presupuestaria (art. 72 CE), aunque se mantiene la coordinación para elaborar el proyecto de Ley de PGE.",
+      "trampas_por_opcion": [
+        "Forman parte del sector público institucional estatal (art. 2.2.g).",
+        "Forman parte del sector público institucional estatal (art. 2.2.b).",
+        "Forman parte del sector público institucional estatal (art. 2.2.d).",
+        "Correcta: el artículo 2.3 excluye a las Cortes Generales por su autonomía presupuestaria."
+      ]
+    },
+    {
+      "id": "LGP-003",
+      "articulo": "Artículo 3",
+      "nivel": 2,
+      "trampa_objetivo": "Diferenciar sector público administrativo y empresarial (ADIF es entidad pública empresarial)",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, ¿cuál de las siguientes entidades NO forma parte del sector público administrativo?",
+      "opciones": [
+        "La Administración General del Estado.",
+        "Los organismos autónomos.",
+        "Las entidades públicas empresariales.",
+        "Las autoridades administrativas independientes."
+      ],
+      "indice_correcta": 2,
+      "cita_literal_boe": "1. El sector público administrativo, integrado por: a) La Administración General del Estado, los organismos autónomos, las autoridades administrativas independientes […] 2. El sector público empresarial, integrado por: a) Las entidades públicas empresariales.",
+      "explicacion_detallada": "El artículo 3 divide el sector público estatal en tres: administrativo, empresarial y fundacional. Las entidades públicas empresariales, como ADIF, figuran en primer lugar dentro del sector público empresarial, junto con las sociedades mercantiles estatales. La AGE, los organismos autónomos y las autoridades administrativas independientes son sector público administrativo.",
+      "trampas_por_opcion": [
+        "Encabeza la lista del sector público administrativo (art. 3.1.a).",
+        "Incluidos en el sector público administrativo (art. 3.1.a).",
+        "Correcta: las EPE integran el sector público empresarial (art. 3.2.a).",
+        "Incluidas en el sector público administrativo (art. 3.1.a)."
+      ]
+    },
+    {
+      "id": "LGP-004",
+      "articulo": "Artículo 5",
+      "nivel": 1,
+      "trampa_objetivo": "Titulares de la Hacienda Pública estatal",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, la Hacienda Pública estatal está constituida por el conjunto de derechos y obligaciones de contenido económico cuya titularidad corresponde:",
+      "opciones": [
+        "A la Administración General del Estado y a la totalidad del sector público institucional estatal.",
+        "A la Administración General del Estado y a sus organismos autónomos.",
+        "A la Administración General del Estado, a sus organismos autónomos y a las entidades públicas empresariales.",
+        "Al Estado, a las comunidades autónomas y a las entidades locales."
+      ],
+      "indice_correcta": 1,
+      "cita_literal_boe": "La Hacienda Pública estatal, está constituida por el conjunto de derechos y obligaciones de contenido económico cuya titularidad corresponde a la Administración General del Estado y a sus organismos autónomos.",
+      "explicacion_detallada": "La Hacienda Pública estatal es más estrecha que el sector público estatal: solo comprende los derechos y obligaciones de la AGE y de sus organismos autónomos. Las entidades públicas empresariales y el resto del sector público institucional quedan fuera de este concepto.",
+      "trampas_por_opcion": [
+        "Confunde Hacienda Pública estatal con sector público estatal (art. 2).",
+        "Correcta: reproduce el artículo 5.1.",
+        "Añade las entidades públicas empresariales, que no forman parte de la Hacienda Pública estatal.",
+        "Extiende el concepto a otras Administraciones territoriales."
+      ]
+    },
+    {
+      "id": "LGP-005",
+      "articulo": "Artículo 15",
+      "nivel": 1,
+      "trampa_objetivo": "Plazo de prescripción de los derechos de la Hacienda Pública estatal",
+      "enunciado": "Según el artículo 15 de la Ley 47/2003, General Presupuestaria, salvo lo establecido por las leyes reguladoras de los distintos recursos, ¿cuándo prescribirá el derecho de la Hacienda Pública estatal a reconocer o liquidar créditos a su favor?",
+      "opciones": [
+        "A los tres años.",
+        "A los cinco años.",
+        "A los cuatro años.",
+        "Al año."
+      ],
+      "indice_correcta": 2,
+      "cita_literal_boe": "Salvo lo establecido por las leyes reguladoras de los distintos recursos, prescribirá a los cuatro años el derecho de la Hacienda Pública estatal: a) A reconocer o liquidar créditos a su favor",
+      "explicacion_detallada": "El plazo general de prescripción en la LGP es de cuatro años, tanto para los derechos de la Hacienda Pública estatal (art. 15) como para sus obligaciones (art. 25). En el derecho a reconocer o liquidar, el plazo se cuenta desde el día en que el derecho pudo ejercitarse.",
+      "trampas_por_opcion": [
+        "Plazo desplazado a la baja. El tribunal usa series de cifras próximas.",
+        "Plazo desplazado al alza.",
+        "Correcta: cuatro años (art. 15.1).",
+        "Plazo muy inferior al legal."
+      ]
+    },
+    {
+      "id": "LGP-006",
+      "articulo": "Artículo 24",
+      "nivel": 3,
+      "trampa_objetivo": "Plazo y requisito de reclamación para el devengo de intereses a favor del acreedor",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, ¿cuándo deberá la Administración abonar intereses de demora al acreedor de la Hacienda Pública estatal?",
+      "opciones": [
+        "Desde el día siguiente al del reconocimiento de la obligación, sin necesidad de reclamación previa.",
+        "Si no le pagara dentro de los tres meses siguientes al día de notificación de la resolución judicial o del reconocimiento de la obligación, desde que el acreedor, una vez transcurrido dicho plazo, reclame por escrito el cumplimiento de la obligación.",
+        "Si no le pagara dentro de los seis meses siguientes al día de notificación de la resolución judicial o del reconocimiento de la obligación, desde el vencimiento de dicho plazo.",
+        "Si no le pagara dentro del mes siguiente al día de notificación de la resolución judicial o del reconocimiento de la obligación, desde que el acreedor reclame por escrito el cumplimiento de la obligación."
+      ],
+      "indice_correcta": 1,
+      "cita_literal_boe": "Si la Administración no pagara al acreedor de la Hacienda Pública estatal dentro de los tres meses siguientes al día de notificación de la resolución judicial o del reconocimiento de la obligación, habrá de abonarle el interés señalado en el artículo 17 apartado 2 de esta ley, sobre la cantidad debida, desde que el acreedor, una vez transcurrido dicho plazo, reclame por escrito el cumplimiento de la obligación.",
+      "explicacion_detallada": "Para que la Administración deba intereses hacen falta dos requisitos: que pasen tres meses desde la notificación de la sentencia o del reconocimiento de la obligación, y que después el acreedor reclame por escrito. Los intereses corren desde esa reclamación, no desde el vencimiento. Al contrario, las deudas a favor de la Hacienda devengan intereses automáticamente desde el día siguiente al vencimiento (art. 17).",
+      "trampas_por_opcion": [
+        "Aplica al acreedor privado el régimen del artículo 17, pensado para las deudas a favor de la Hacienda Pública.",
+        "Correcta: reproduce el artículo 24.",
+        "Cambia el plazo a seis meses y suprime el requisito de la reclamación escrita.",
+        "Mantiene la reclamación escrita pero reduce el plazo a un mes."
+      ]
+    },
+    {
+      "id": "LGP-007",
+      "articulo": "Artículo 26",
+      "nivel": 2,
+      "trampa_objetivo": "Principios de la programación presupuestaria",
+      "enunciado": "Según el artículo 26 de la Ley 47/2003, General Presupuestaria, ¿cuál de los siguientes NO figura entre los principios por los que se regirá la programación presupuestaria?",
+      "opciones": [
+        "Plurianualidad.",
+        "Lealtad institucional.",
+        "Sostenibilidad financiera.",
+        "Unidad de caja."
+      ],
+      "indice_correcta": 3,
+      "cita_literal_boe": "La programación presupuestaria se regirá por los principios de estabilidad presupuestaria, sostenibilidad financiera, plurianualidad, transparencia, eficiencia en la asignación y utilización de los recursos públicos, responsabilidad y lealtad institucional",
+      "explicacion_detallada": "El artículo 26.1 enumera los principios de la programación presupuestaria remitiéndose a la LO 2/2012: estabilidad presupuestaria, sostenibilidad financiera, plurianualidad, transparencia, eficiencia, responsabilidad y lealtad institucional. La unidad de caja es un principio clásico de la gestión de tesorería, pero no figura en esta lista.",
+      "trampas_por_opcion": [
+        "Figura en la enumeración del artículo 26.1.",
+        "Figura en la enumeración del artículo 26.1.",
+        "Figura en la enumeración del artículo 26.1.",
+        "Correcta: principio de tesorería que no está en la lista del artículo 26.1."
+      ]
+    },
+    {
+      "id": "LGP-008",
+      "articulo": "Artículo 28",
+      "nivel": 1,
+      "trampa_objetivo": "Horizonte temporal de los escenarios presupuestarios plurianuales",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, los escenarios presupuestarios plurianuales determinarán los límites que la acción de gobierno debe respetar en los casos en que sus decisiones tengan incidencia presupuestaria, referidos a:",
+      "opciones": [
+        "Los dos ejercicios siguientes.",
+        "Los tres ejercicios siguientes.",
+        "Los cuatro ejercicios siguientes.",
+        "Los cinco ejercicios siguientes."
+      ],
+      "indice_correcta": 1,
+      "cita_literal_boe": "Los escenarios presupuestarios plurianuales determinarán los límites, referidos a los tres ejercicios siguientes, que la acción de gobierno debe respetar",
+      "explicacion_detallada": "Tanto los escenarios presupuestarios plurianuales (art. 28.1) como los programas plurianuales ministeriales (art. 29.1) se refieren a los tres ejercicios siguientes. No hay que confundirlo con los compromisos de gasto plurianual, cuyo número de ejercicios no puede superar cuatro (art. 47.2).",
+      "trampas_por_opcion": [
+        "Horizonte desplazado a la baja.",
+        "Correcta: tres ejercicios siguientes (art. 28.1).",
+        "Confunde con el máximo de cuatro ejercicios de los compromisos plurianuales (art. 47.2).",
+        "Horizonte desplazado al alza."
+      ]
+    },
+    {
+      "id": "LGP-009",
+      "articulo": "Artículo 32",
+      "nivel": 1,
+      "trampa_objetivo": "Definición legal de los Presupuestos Generales del Estado",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, los Presupuestos Generales del Estado constituyen:",
+      "opciones": [
+        "La expresión cifrada, conjunta y sistemática de los derechos y obligaciones a liquidar durante el ejercicio por cada uno de los órganos y entidades que forman parte del sector público estatal.",
+        "La previsión de los ingresos y gastos de la Administración General del Estado y de sus organismos autónomos durante el año natural.",
+        "La expresión cifrada, conjunta y sistemática de los ingresos y gastos que, como mínimo, deben realizar los órganos y entidades del sector público estatal durante el ejercicio.",
+        "La programación plurianual de la actividad del sector público estatal con presupuesto limitativo."
+      ],
+      "indice_correcta": 0,
+      "cita_literal_boe": "Los Presupuestos Generales del Estado constituyen la expresión cifrada, conjunta y sistemática de los derechos y obligaciones a liquidar durante el ejercicio por cada uno de los órganos y entidades que forman parte del sector público estatal.",
+      "explicacion_detallada": "La definición del artículo 32 habla de derechos y obligaciones a liquidar, no de ingresos y gastos, y abarca a todo el sector público estatal. La programación plurianual corresponde a los escenarios presupuestarios del artículo 28.",
+      "trampas_por_opcion": [
+        "Correcta: reproduce literalmente el artículo 32.",
+        "Reduce el ámbito a la AGE y sus organismos autónomos y sustituye derechos y obligaciones por ingresos y gastos.",
+        "Copia el arranque pero introduce «como mínimo», cuando los créditos son el máximo de obligaciones a reconocer (art. 33.2.a).",
+        "Es la definición de los escenarios presupuestarios plurianuales (art. 28.1)."
+      ]
+    },
+    {
+      "id": "LGP-010",
+      "articulo": "Artículo 37",
+      "nivel": 1,
+      "trampa_objetivo": "Fecha límite de remisión del proyecto de PGE a las Cortes",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, ¿antes de qué fecha será remitido a las Cortes Generales el proyecto de Ley de Presupuestos Generales del Estado?",
+      "opciones": [
+        "Antes del día 1 de septiembre del año anterior al que se refiera.",
+        "Antes del día 15 de septiembre del año anterior al que se refiera.",
+        "Antes del día 1 de octubre del año anterior al que se refiera.",
+        "Antes del día 1 de noviembre del año anterior al que se refiera."
+      ],
+      "indice_correcta": 2,
+      "cita_literal_boe": "será remitido a las Cortes Generales antes del día 1 de octubre del año anterior al que se refiera.",
+      "explicacion_detallada": "El proyecto, con su articulado, anexos y estados de ingresos y gastos, debe llegar a las Cortes antes del 1 de octubre del año anterior. Antes, el Ministro de Hacienda eleva el anteproyecto al acuerdo del Gobierno (art. 36.5).",
+      "trampas_por_opcion": [
+        "Fecha adelantada un mes.",
+        "Fecha intermedia inventada.",
+        "Correcta: antes del 1 de octubre (art. 37.1).",
+        "Fecha retrasada un mes."
+      ]
+    },
+    {
+      "id": "LGP-011",
+      "articulo": "Artículo 37",
+      "nivel": 2,
+      "trampa_objetivo": "Documentación complementaria del proyecto de Ley de PGE",
+      "enunciado": "Según el artículo 37 de la Ley 47/2003, General Presupuestaria, ¿cuál de los siguientes documentos NO forma parte de la documentación complementaria que acompaña al proyecto de Ley de Presupuestos Generales del Estado?",
+      "opciones": [
+        "El informe de impacto de género.",
+        "El informe de alineamiento de los Presupuestos Generales del Estado con los Objetivos de Desarrollo Sostenible de la Agenda 2030.",
+        "Una memoria de los beneficios fiscales.",
+        "El dictamen del Consejo de Estado sobre el anteproyecto de Ley de Presupuestos Generales del Estado."
+      ],
+      "indice_correcta": 3,
+      "cita_literal_boe": "b) El informe de impacto de género. […] d) El informe de alineamiento de los Presupuestos Generales del Estado con los Objetivos de Desarrollo Sostenible de la Agenda 2030. […] k) Una memoria de los beneficios fiscales.",
+      "explicacion_detallada": "El artículo 37.2 enumera once documentos: memorias de los programas, informes de impacto de género, de infancia, adolescencia y familia, y de alineamiento con los ODS, anexos de créditos e inversiones, liquidaciones, cuentas de la Seguridad Social, estados consolidados, informe económico y financiero y memoria de beneficios fiscales. El dictamen del Consejo de Estado aparece en la LGP para los créditos extraordinarios (art. 55.2), no para el proyecto de PGE.",
+      "trampas_por_opcion": [
+        "Figura en el artículo 37.2.b.",
+        "Figura en el artículo 37.2.d.",
+        "Figura en el artículo 37.2.k.",
+        "Correcta: el dictamen del Consejo de Estado se exige en otros procedimientos (art. 55.2), no aquí."
+      ]
+    },
+    {
+      "id": "LGP-012",
+      "articulo": "Artículo 38",
+      "nivel": 2,
+      "trampa_objetivo": "Prórroga automática de los presupuestos iniciales",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, si la Ley de Presupuestos Generales del Estado no se aprobara antes del primer día del ejercicio económico correspondiente:",
+      "opciones": [
+        "Se considerarán automáticamente prorrogados los presupuestos iniciales del ejercicio anterior hasta la aprobación y publicación de los nuevos en el Boletín Oficial del Estado.",
+        "El Gobierno aprobará mediante real decreto-ley un presupuesto provisional hasta la aprobación de los nuevos.",
+        "Se considerarán automáticamente prorrogados los créditos definitivos del ejercicio anterior, incluidas las modificaciones aprobadas durante el mismo.",
+        "Se considerarán prorrogados los presupuestos iniciales del ejercicio anterior durante un plazo máximo de seis meses."
+      ],
+      "indice_correcta": 0,
+      "cita_literal_boe": "Si la Ley de Presupuestos Generales del Estado no se aprobara antes del primer día del ejercicio económico correspondiente, se considerarán automáticamente prorrogados los presupuestos iniciales del ejercicio anterior hasta la aprobación y publicación de los nuevos en el",
+      "explicacion_detallada": "La prórroga es automática, de los presupuestos iniciales (no de los definitivos con sus modificaciones) y sin límite temporal: dura hasta que los nuevos se aprueben y publiquen en el BOE. No se prorrogan los créditos de programas o actuaciones que terminen en el ejercicio (art. 38.2).",
+      "trampas_por_opcion": [
+        "Correcta: reproduce el artículo 38.1.",
+        "Inventa un instrumento normativo que la ley no prevé.",
+        "Cambia «iniciales» por «definitivos», un detalle que el tribunal suele alterar.",
+        "Añade un límite temporal que no existe."
+      ]
+    },
+    {
+      "id": "LGP-013",
+      "articulo": "Artículo 47",
+      "nivel": 2,
+      "trampa_objetivo": "Porcentajes de los compromisos de gasto plurianual",
+      "enunciado": "Según el artículo 47 de la Ley 47/2003, General Presupuestaria, en los compromisos de gasto de carácter plurianual, el gasto que se impute al segundo ejercicio no podrá exceder de la cantidad que resulte de aplicar al crédito inicial a que corresponda la operación el porcentaje del:",
+      "opciones": [
+        "70 por ciento.",
+        "60 por ciento.",
+        "50 por ciento.",
+        "40 por ciento."
+      ],
+      "indice_correcta": 1,
+      "cita_literal_boe": "en el ejercicio inmediato siguiente, el 70 por ciento, en el segundo ejercicio, el 60 por ciento, y en los ejercicios tercero y cuarto, el 50 por ciento.",
+      "explicacion_detallada": "La escala del artículo 47.2 es 70-60-50-50: 70 % en el ejercicio inmediato siguiente, 60 % en el segundo y 50 % en el tercero y en el cuarto, con un máximo de cuatro ejercicios. El Gobierno puede modificar estos porcentajes en casos especialmente justificados (art. 47.3). En 2025 el tribunal preguntó por el 70 % del ejercicio inmediato siguiente.",
+      "trampas_por_opcion": [
+        "Es el porcentaje del ejercicio inmediato siguiente.",
+        "Correcta: 60 % en el segundo ejercicio.",
+        "Es el porcentaje de los ejercicios tercero y cuarto.",
+        "No aparece en la escala legal."
+      ]
+    },
+    {
+      "id": "LGP-014",
+      "articulo": "Artículo 50",
+      "nivel": 2,
+      "trampa_objetivo": "Dotación del Fondo de Contingencia",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, ¿por qué importe incluirá el presupuesto del Estado una sección bajo la rúbrica «Fondo de Contingencia de ejecución presupuestaria»?",
+      "opciones": [
+        "Por importe del dos por ciento del total de gastos del presupuesto, incluidas las operaciones financieras.",
+        "Por importe del uno por ciento del total de gastos para operaciones no financieras.",
+        "Por importe del tres por ciento del total de gastos para operaciones no financieras.",
+        "Por importe del dos por ciento del total de gastos para operaciones no financieras, excluidos los destinados a financiar a las comunidades autónomas y entidades locales en aplicación de sus respectivos sistemas de financiación."
+      ],
+      "indice_correcta": 3,
+      "cita_literal_boe": "por importe del dos por ciento del total de gastos para operaciones no financieras, excluidos los destinados a financiar a las comunidades autónomas y entidades locales en aplicación de sus respectivos sistemas de financiación",
+      "explicacion_detallada": "El Fondo de Contingencia es el 2 % del gasto no financiero, sin contar la financiación de CCAA y EELL. Solo financia ampliaciones, créditos extraordinarios y suplementos, e incorporaciones, nunca gastos discrecionales sin cobertura, y su aplicación la aprueba el Consejo de Ministros. Ojo con el 1 %: es el límite de los anticipos de Tesorería (art. 60).",
+      "trampas_por_opcion": [
+        "Porcentaje correcto pero base de cálculo alterada: añade las operaciones financieras.",
+        "Confunde con el 1 % de los anticipos de Tesorería (art. 60).",
+        "Porcentaje desplazado al alza.",
+        "Correcta: reproduce el artículo 50.1."
+      ]
+    },
+    {
+      "id": "LGP-015",
+      "articulo": "Artículo 52",
+      "nivel": 2,
+      "trampa_objetivo": "Dirección prohibida de las transferencias de crédito",
+      "enunciado": "Según el artículo 52 de la Ley 47/2003, General Presupuestaria, las transferencias de crédito NO podrán realizarse:",
+      "opciones": [
+        "Entre créditos de un mismo programa.",
+        "Con la creación de créditos nuevos.",
+        "Desde créditos para operaciones corrientes a créditos para operaciones de capital.",
+        "Desde créditos para operaciones de capital a créditos para operaciones corrientes."
+      ],
+      "indice_correcta": 3,
+      "cita_literal_boe": "No podrán realizarse desde créditos para operaciones financieras al resto de los créditos, ni desde créditos para operaciones de capital a créditos para operaciones corrientes.",
+      "explicacion_detallada": "La lógica es proteger la inversión: no se puede pasar dinero de capital a gasto corriente, ni de operaciones financieras al resto. La dirección contraria, de corriente a capital, sí está permitida. El artículo 52.1 admite expresamente la creación de créditos nuevos, y las transferencias dentro de un mismo programa las pueden autorizar los ministros (art. 63.1.a).",
+      "trampas_por_opcion": [
+        "Están permitidas y las autorizan los ministros (art. 63.1.a).",
+        "El artículo 52.1 lo admite expresamente («incluso con la creación de créditos nuevos»).",
+        "Invierte el sentido de la prohibición. Esta dirección sí está permitida.",
+        "Correcta: es la restricción del artículo 52.1.a."
+      ]
+    },
+    {
+      "id": "LGP-016",
+      "articulo": "Artículo 55",
+      "nivel": 2,
+      "trampa_objetivo": "Órgano que autoriza créditos extraordinarios financiados con el Fondo de Contingencia",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, ¿a quién corresponde autorizar los créditos extraordinarios y suplementos de crédito para atender obligaciones del ejercicio corriente cuando se financien con cargo al Fondo de Contingencia?",
+      "opciones": [
+        "Al Consejo de Ministros.",
+        "A las Cortes Generales, mediante ley.",
+        "Al Ministro de Hacienda.",
+        "A los titulares de los ministerios afectados, previo informe de la Intervención Delegada."
+      ],
+      "indice_correcta": 0,
+      "cita_literal_boe": "El Consejo de Ministros autorizará los créditos extraordinarios y suplementos de crédito para atender obligaciones del ejercicio corriente o de ejercicios anteriores si se hubiera anulado crédito en el ejercicio de procedencia, cuando se financien con cargo al Fondo de Contingencia.",
+      "explicacion_detallada": "Cuando un crédito extraordinario o un suplemento se financia con el Fondo de Contingencia, basta con el Consejo de Ministros (art. 55.3). Hace falta un proyecto de ley a las Cortes, con informe de la DG de Presupuestos y dictamen del Consejo de Estado, cuando se financian con baja en otros créditos, afectan a operaciones financieras o cubren obligaciones de ejercicios anteriores sin crédito anulado (art. 55.2).",
+      "trampas_por_opcion": [
+        "Correcta: reproduce el artículo 55.3.",
+        "Es la vía del artículo 55.2, para los supuestos que no se financian con el Fondo de Contingencia.",
+        "El Ministro de Hacienda propone, pero no autoriza este supuesto.",
+        "Los ministros solo autorizan transferencias y generaciones concretas (art. 63)."
+      ]
+    },
+    {
+      "id": "LGP-017",
+      "articulo": "Artículo 56",
+      "nivel": 3,
+      "trampa_objetivo": "Umbrales de competencia en créditos extraordinarios de organismos autónomos",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, ¿a quién corresponde autorizar los créditos extraordinarios o suplementarios en el presupuesto de un organismo autónomo hasta un importe del 10 % del correspondiente capítulo de su presupuesto inicial de gastos, cuando no supere la cuantía de 500.000 euros, excluidos los que afecten a gastos de personal?",
+      "opciones": [
+        "Al Ministro de Hacienda.",
+        "Al Consejo de Ministros.",
+        "A los Presidentes o Directores de los organismos, dando cuenta de los acuerdos al Ministro de que dependan y al Ministro de Hacienda.",
+        "Al Ministro del departamento al que esté adscrito el organismo, previo informe de la Intervención Delegada."
+      ],
+      "indice_correcta": 2,
+      "cita_literal_boe": "A los Presidentes o Directores de los organismos hasta un importe del 10 % del correspondiente capítulo de su presupuesto inicial de gastos, cuando no supere la cuantía de 500.000 euros",
+      "explicacion_detallada": "El artículo 56.3 escalona la competencia. Hasta el 10 % del capítulo y 500.000 euros, la tiene el Presidente o Director del organismo. Por encima, sin llegar al 20 % ni superar 1.000.000 de euros, el Ministro de Hacienda. En el resto de casos, el Consejo de Ministros.",
+      "trampas_por_opcion": [
+        "Es el escalón intermedio: hasta el 20 % y 1.000.000 euros.",
+        "Es el escalón superior: los restantes casos.",
+        "Correcta: es el primer escalón del artículo 56.3.a.",
+        "El ministro de adscripción no tiene asignado ningún escalón; solo se le da cuenta."
+      ]
+    },
+    {
+      "id": "LGP-018",
+      "articulo": "Artículo 73",
+      "nivel": 2,
+      "trampa_objetivo": "Fases de la gestión del gasto: aprobación, compromiso, reconocimiento",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, ¿cómo se denomina el acto mediante el cual se acuerda, tras el cumplimiento de los trámites legalmente establecidos, la realización de gastos previamente aprobados, por un importe determinado o determinable?",
+      "opciones": [
+        "Aprobación del gasto.",
+        "Compromiso de gasto.",
+        "Reconocimiento de la obligación.",
+        "Ordenación del pago."
+      ],
+      "indice_correcta": 1,
+      "cita_literal_boe": "El compromiso es el acto mediante el cual se acuerda, tras el cumplimiento de los trámites legalmente establecidos, la realización de gastos previamente aprobados, por un importe determinado o determinable.",
+      "explicacion_detallada": "Las fases del gasto son aprobación, compromiso, reconocimiento de la obligación, ordenación del pago y pago material. La aprobación reserva crédito sin efectos frente a terceros. El compromiso es el primer acto con relevancia jurídica frente a terceros y vincula a la Hacienda. El reconocimiento declara un crédito exigible contra la Hacienda.",
+      "trampas_por_opcion": [
+        "La aprobación autoriza el gasto y reserva crédito, sin relaciones con terceros (art. 73.2).",
+        "Correcta: definición del artículo 73.3.",
+        "Declara la existencia de un crédito exigible (art. 73.4).",
+        "Fase posterior que corresponde al Ordenador de pagos."
+      ]
+    },
+    {
+      "id": "LGP-019",
+      "articulo": "Artículo 78",
+      "nivel": 2,
+      "trampa_objetivo": "Límite global de los anticipos de caja fija",
+      "enunciado": "Según el artículo 78 de la Ley 47/2003, General Presupuestaria, la cuantía global de los anticipos de caja fija no podrá superar para cada ministerio u organismo autónomo el siguiente porcentaje del total de créditos del capítulo destinado a gastos corrientes en bienes y servicios del presupuesto vigente en cada momento:",
+      "opciones": [
+        "El cinco por ciento.",
+        "El siete por ciento.",
+        "El diez por ciento.",
+        "El catorce por ciento."
+      ],
+      "indice_correcta": 1,
+      "cita_literal_boe": "la cuantía global de los anticipos de caja fija no podrá superar para cada ministerio u organismo autónomo el siete por ciento del total de créditos del capítulo destinado a gastos corrientes en bienes y servicios",
+      "explicacion_detallada": "El límite general es el 7 %. Las cifras de los distractores también están en el artículo 78.3: la Agencia Española de Cooperación Internacional puede llegar al 14 % y el programa «Seguridad ciudadana» del Ministerio del Interior al 10 % para indemnizaciones por razón del servicio. El tribunal suele usar como distractores otras cifras del mismo artículo.",
+      "trampas_por_opcion": [
+        "Porcentaje inventado por debajo del legal.",
+        "Correcta: límite general del artículo 78.3.",
+        "Límite especial del programa 222A «Seguridad ciudadana».",
+        "Límite especial de la Agencia Española de Cooperación Internacional."
+      ]
+    },
+    {
+      "id": "LGP-020",
+      "articulo": "Artículo 79",
+      "nivel": 2,
+      "trampa_objetivo": "Plazos de rendición de las cuentas de pagos a justificar",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, ¿cuál es el plazo de rendición de las cuentas por los perceptores de órdenes de pago a justificar?",
+      "opciones": [
+        "Tres meses, excepto las correspondientes a pagos de expropiaciones y pagos en el extranjero, que podrán ser rendidas en el plazo de seis meses.",
+        "Seis meses, excepto las correspondientes a pagos de expropiaciones y pagos en el extranjero, que podrán ser rendidas en el plazo de doce meses.",
+        "Tres meses en todo caso, sin posibilidad de ampliación.",
+        "Un mes, excepto las correspondientes a pagos de expropiaciones y pagos en el extranjero, que podrán ser rendidas en el plazo de tres meses."
+      ],
+      "indice_correcta": 0,
+      "cita_literal_boe": "El plazo de rendición de las cuentas será de tres meses, excepto las correspondientes a pagos de expropiaciones y pagos en el extranjero que podrán ser rendidas en el plazo de seis meses.",
+      "explicacion_detallada": "La regla es tres meses con carácter general y seis para expropiaciones y pagos en el extranjero. Excepcionalmente, el Ministro o los presidentes y directores pueden ampliar esos plazos a seis y doce meses respectivamente. De ahí sale el distractor 6/12, que mezcla la regla con su ampliación.",
+      "trampas_por_opcion": [
+        "Correcta: reproduce el artículo 79.4.",
+        "Son los plazos de la ampliación excepcional, no la regla general.",
+        "Ignora la excepción y la posibilidad de ampliación.",
+        "Plazos desplazados a la baja."
+      ]
+    },
+    {
+      "id": "LGP-021",
+      "articulo": "Artículo 127",
+      "nivel": 1,
+      "trampa_objetivo": "Plazo de formulación de las cuentas anuales frente al de rendición",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, ¿en qué plazo máximo deberán formular sus cuentas anuales todas las entidades del sector público estatal?",
+      "opciones": [
+        "En el plazo máximo de un mes desde el cierre del ejercicio económico.",
+        "En el plazo máximo de tres meses desde el cierre del ejercicio económico.",
+        "En el plazo máximo de seis meses desde el cierre del ejercicio económico.",
+        "En el plazo máximo de siete meses desde el cierre del ejercicio económico."
+      ],
+      "indice_correcta": 1,
+      "cita_literal_boe": "Todas las entidades del sector público estatal deberán formular sus cuentas anuales, de acuerdo con los principios contables que les sean de aplicación, en el plazo máximo de tres meses desde el cierre del ejercicio económico",
+      "explicacion_detallada": "Hay que distinguir tres plazos encadenados. Las cuentas se formulan en tres meses (art. 127). Las cuentas aprobadas, con su informe de auditoría, se remiten a la IGAE dentro de los siete meses siguientes al fin del ejercicio (art. 139.1). La IGAE las envía al Tribunal de Cuentas en un mes (art. 139.2).",
+      "trampas_por_opcion": [
+        "Es el plazo que tiene la IGAE para remitir la documentación al Tribunal de Cuentas (art. 139.2).",
+        "Correcta: tres meses (art. 127).",
+        "Es el plazo del Tribunal de Cuentas para examinar la Cuenta General del Estado (art. 132).",
+        "Es el plazo de rendición de las cuentas aprobadas a la IGAE (art. 139.1)."
+      ]
+    },
+    {
+      "id": "LGP-022",
+      "articulo": "Artículo 131",
+      "nivel": 1,
+      "trampa_objetivo": "Fecha de remisión de la Cuenta General del Estado al Tribunal de Cuentas",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, la Cuenta General del Estado de cada año se formará por la Intervención General de la Administración del Estado y se elevará al Gobierno para su remisión al Tribunal de Cuentas antes del día:",
+      "opciones": [
+        "30 de junio del año siguiente al que se refiera.",
+        "31 de julio del año siguiente al que se refiera.",
+        "31 de octubre del año siguiente al que se refiera.",
+        "31 de diciembre del año siguiente al que se refiera."
+      ],
+      "indice_correcta": 2,
+      "cita_literal_boe": "La Cuenta General del Estado de cada año se formará por la Intervención General de la Administración del Estado y se elevará al Gobierno para su remisión al Tribunal de Cuentas antes del día 31 de octubre del año siguiente al que se refiera.",
+      "explicacion_detallada": "La IGAE forma la Cuenta General del Estado consolidando las cuentas del sector público estatal y el Gobierno la remite al Tribunal de Cuentas antes del 31 de octubre del año siguiente. El 31 de julio es otra fecha del mismo título: el día en que la IGAE publica en el BOE la referencia al Registro de cuentas anuales del sector público (art. 136.3).",
+      "trampas_por_opcion": [
+        "Fecha inventada.",
+        "Fecha de la publicación en el BOE de la referencia al Registro de cuentas anuales (art. 136.3).",
+        "Correcta: artículo 131.1.",
+        "Fecha desplazada al cierre del año."
+      ]
+    },
+    {
+      "id": "LGP-023",
+      "articulo": "Artículo 140",
+      "nivel": 1,
+      "trampa_objetivo": "Control externo frente a control interno",
+      "enunciado": "Según el artículo 140 de la Ley 47/2003, General Presupuestaria, ¿a quién corresponde el control externo del sector público estatal?",
+      "opciones": [
+        "A la Autoridad Independiente de Responsabilidad Fiscal (AIReF).",
+        "A la Intervención General de la Administración del Estado (IGAE).",
+        "A las Cortes Generales, a través de su Oficina Presupuestaria.",
+        "Al Tribunal de Cuentas, en su condición de supremo órgano fiscalizador de las cuentas y de la gestión económica del Estado y del sector público."
+      ],
+      "indice_correcta": 3,
+      "cita_literal_boe": "En su condición de supremo órgano fiscalizador de las cuentas y de la gestión económica del Estado y del sector público, corresponde al Tribunal de Cuentas el control externo del sector público estatal",
+      "explicacion_detallada": "El artículo 140 reparte el control en dos. El control externo corresponde al Tribunal de Cuentas (apartado 1) y el control interno a la IGAE, con plena autonomía (apartado 2). En 2025 el tribunal preguntó la cara contraria: a quién corresponde el control interno.",
+      "trampas_por_opcion": [
+        "La AIReF no aparece en el artículo 140.",
+        "La IGAE ejerce el control interno (art. 140.2), no el externo.",
+        "La Oficina Presupuestaria recibe informes trimestrales (arts. 50 y 56), pero no ejerce el control externo.",
+        "Correcta: artículo 140.1."
+      ]
+    },
+    {
+      "id": "LGP-024",
+      "articulo": "Artículo 150",
+      "nivel": 1,
+      "trampa_objetivo": "Modalidades de la función interventora",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, la función interventora se ejercerá en sus modalidades de:",
+      "opciones": [
+        "Intervención previa y posterior.",
+        "Intervención plena y limitada.",
+        "Intervención formal y material.",
+        "Intervención ordinaria y de requisitos básicos."
+      ],
+      "indice_correcta": 2,
+      "cita_literal_boe": "La función interventora se ejercerá en sus modalidades de intervención formal y material.",
+      "explicacion_detallada": "La intervención formal verifica los requisitos legales examinando los documentos del expediente. La intervención material comprueba la real y efectiva aplicación de los fondos públicos. La fiscalización «de requisitos básicos» del artículo 152 es un régimen especial que puede acordar el Consejo de Ministros, no una modalidad.",
+      "trampas_por_opcion": [
+        "El artículo 150 no distingue entre intervención previa y posterior. El control posterior es propio de la auditoría pública (art. 162).",
+        "Terminología que no utiliza el artículo 150.",
+        "Correcta: artículo 150.1.",
+        "Mezcla el régimen general con el régimen especial de requisitos básicos (art. 152)."
+      ]
+    },
+    {
+      "id": "LGP-025",
+      "articulo": "Artículo 151",
+      "nivel": 3,
+      "trampa_objetivo": "Supuestos no sujetos a fiscalización previa",
+      "enunciado": "Según el artículo 151 de la Ley 47/2003, General Presupuestaria, ¿cuál de los siguientes SÍ está sometido a la fiscalización previa?",
+      "opciones": [
+        "Los contratos menores, así como los asimilados a ellos en virtud de la legislación contractual.",
+        "Las subvenciones con asignación nominativa.",
+        "Las subvenciones concedidas en régimen de concurrencia competitiva.",
+        "Los gastos menores de 5.000 euros cuyo pago se realice mediante el procedimiento especial de anticipo de caja fija."
+      ],
+      "indice_correcta": 2,
+      "cita_literal_boe": "No estarán sometidos a la fiscalización previa prevista en el apartado 2.a) del artículo anterior: a) los contratos menores así como los asimilados a ellos en virtud de la legislación contractual; […] c) los gastos menores de 5.000 euros cuyo pago se realice mediante el procedimiento especial de anticipo de caja fija […] e) las subvenciones con asignación nominativa;",
+      "explicacion_detallada": "El artículo 151 exime de fiscalización previa, entre otros, a los contratos menores, los gastos periódicos tras fiscalizar el periodo inicial, los gastos menores de 5.000 euros por anticipo de caja fija, las subvenciones nominativas, los procesos electorales y las emergencias. Las subvenciones en concurrencia competitiva no están en la lista, así que siguen el régimen general.",
+      "trampas_por_opcion": [
+        "Exentos (art. 151.a).",
+        "Exentas (art. 151.e).",
+        "Correcta: no figuran entre las exenciones del artículo 151.",
+        "Exentos (art. 151.c)."
+      ]
+    },
+    {
+      "id": "LGP-026",
+      "articulo": "Artículo 155",
+      "nivel": 3,
+      "trampa_objetivo": "Resolución de discrepancias frente a reparos de la IGAE",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, cuando el reparo haya sido formulado por la Intervención General de la Administración del Estado y subsista la discrepancia, ¿a quién corresponde adoptar resolución definitiva?",
+      "opciones": [
+        "Al Consejo de Ministros.",
+        "Al Ministro de Hacienda.",
+        "Al Subsecretario del departamento afectado.",
+        "Al Tribunal de Cuentas."
+      ],
+      "indice_correcta": 0,
+      "cita_literal_boe": "Cuando el reparo haya sido formulado por la Intervención General de la Administración del Estado o este centro directivo haya confirmado el de otra Intervención General o delegada, subsistiendo la discrepancia, corresponderá al Consejo de Ministros adoptar resolución definitiva.",
+      "explicacion_detallada": "La escalera de discrepancias del artículo 155 es esta. Si el reparo es de una intervención delegada, resuelve la IGAE con carácter obligatorio. Si lo formula o confirma la IGAE y la discrepancia subsiste, resuelve el Consejo de Ministros. La Subsecretaría es solo el conducto para plantear la discrepancia en los ministerios.",
+      "trampas_por_opcion": [
+        "Correcta: artículo 155.b.",
+        "El Ministro de Hacienda resuelve discrepancias en materia de modificaciones presupuestarias (art. 62.2), no en los reparos.",
+        "La Subsecretaría es solo el conducto para plantear la discrepancia.",
+        "El Tribunal de Cuentas no interviene en la resolución de discrepancias."
+      ]
+    },
+    {
+      "id": "LGP-027",
+      "articulo": "Artículo 164",
+      "nivel": 2,
+      "trampa_objetivo": "Modalidades de la auditoría pública",
+      "enunciado": "Según el artículo 164 de la Ley 47/2003, General Presupuestaria, ¿cuál de las siguientes NO es una de las modalidades que adoptará la auditoría pública?",
+      "opciones": [
+        "La auditoría de fiscalización previa.",
+        "La auditoría de regularidad contable.",
+        "La auditoría de cumplimiento.",
+        "La auditoría operativa."
+      ],
+      "indice_correcta": 0,
+      "cita_literal_boe": "La auditoría pública adoptará las siguientes modalidades: a) La auditoría de regularidad contable",
+      "explicacion_detallada": "La auditoría pública es un control posterior (art. 162) con tres modalidades: regularidad contable, cumplimiento y operativa, que pueden combinarse. Una auditoría previa sería contradictoria con su definición: la fiscalización previa es propia de la función interventora (art. 150.2.a).",
+      "trampas_por_opcion": [
+        "Correcta: la fiscalización previa pertenece a la función interventora, no a la auditoría.",
+        "Figura en el artículo 164.1.a.",
+        "Figura en el artículo 164.1.b.",
+        "Figura en el artículo 164.1.c."
+      ]
+    },
+    {
+      "id": "LGP-028",
+      "articulo": "Artículo 176",
+      "nivel": 1,
+      "trampa_objetivo": "Grado de culpa que genera responsabilidad patrimonial",
+      "enunciado": "Según el artículo 176 de la Ley 47/2003, General Presupuestaria, las autoridades y demás personal al servicio de las entidades del sector público estatal estarán obligados a indemnizar a la Hacienda Pública estatal los daños y perjuicios derivados de resoluciones o actos con infracción de dicha ley cuando los adopten o realicen:",
+      "opciones": [
+        "En todo caso, con independencia de la existencia de culpa.",
+        "Por dolo o culpa graves.",
+        "Únicamente por dolo.",
+        "Por dolo, culpa o negligencia, incluso leve."
+      ],
+      "indice_correcta": 1,
+      "cita_literal_boe": "Las autoridades y demás personal al servicio de las entidades contempladas en el artículo 2 de esta ley que por dolo o culpa graves adopten resoluciones o realicen actos con infracción de las disposiciones de esta ley, estarán obligados a indemnizar",
+      "explicacion_detallada": "La responsabilidad del Título VII exige dolo o culpa grave, y es independiente de la responsabilidad penal o disciplinaria. El grado de culpa determina su alcance (art. 178): con dolo se responde de todos los daños que conocidamente deriven del acto; con culpa grave, solo de los que sean consecuencia necesaria.",
+      "trampas_por_opcion": [
+        "Responsabilidad objetiva que la LGP no establece.",
+        "Correcta: artículo 176.",
+        "Deja fuera la culpa grave.",
+        "Rebaja el umbral a la culpa leve."
+      ]
+    },
+    {
+      "id": "LGP-029",
+      "articulo": "Artículo 178",
+      "nivel": 2,
+      "trampa_objetivo": "Responsabilidad mancomunada o solidaria",
+      "enunciado": "Según la Ley 47/2003, General Presupuestaria, ¿cómo será la responsabilidad de quienes hayan participado en la resolución o en el acto que genere la obligación de indemnizar?",
+      "opciones": [
+        "Solidaria en todo caso.",
+        "Mancomunada en todo caso.",
+        "Subsidiaria respecto de la de los particulares que hubieran percibido indebidamente las cantidades.",
+        "Mancomunada, excepto en los casos de dolo, que será solidaria."
+      ],
+      "indice_correcta": 3,
+      "cita_literal_boe": "La responsabilidad de quienes hayan participado en la resolución o en el acto será mancomunada, excepto en los casos de dolo, que será solidaria.",
+      "explicacion_detallada": "La regla general es la responsabilidad mancomunada: cada uno responde de su parte. Si hay dolo, pasa a ser solidaria y se puede reclamar el total a cualquiera. El distractor de la subsidiariedad juega con el artículo 178.2: en caso de culpa grave, la Administración debe dirigirse primero contra los particulares que cobraron indebidamente.",
+      "trampas_por_opcion": [
+        "Generaliza la excepción del dolo.",
+        "Olvida la excepción del dolo.",
+        "Deforma la regla del artículo 178.2 sobre actuar primero contra los particulares en caso de culpa grave.",
+        "Correcta: artículo 178.3."
+      ]
+    },
+    {
+      "id": "LGP-030",
+      "articulo": "Artículo 180",
+      "nivel": 3,
+      "trampa_objetivo": "Recurso contra la resolución del expediente de responsabilidad",
+      "enunciado": "Según el artículo 180 de la Ley 47/2003, General Presupuestaria, la resolución que ponga fin al expediente administrativo de responsabilidad en los supuestos de los párrafos b) a f) del artículo 177.1 será recurrible:",
+      "opciones": [
+        "En alzada ante el Ministro de Hacienda, en el plazo de un mes.",
+        "Ante la Sala de lo Contencioso-Administrativo de la Audiencia Nacional, en el plazo de dos meses.",
+        "Ante la Sala de Justicia del Tribunal de Cuentas, en el plazo de dos meses contados desde el día siguiente al de su notificación.",
+        "Ante la Sala de Justicia del Tribunal de Cuentas, en el plazo de un mes contado desde el día siguiente al de su notificación."
+      ],
+      "indice_correcta": 2,
+      "cita_literal_boe": "Dicha resolución será recurrible ante la Sala de Justicia del Tribunal de Cuentas en el plazo de dos meses contados desde el día siguiente al de su notificación.",
+      "explicacion_detallada": "El alcance o la malversación (art. 177.1.a) los exige directamente el Tribunal de Cuentas mediante el procedimiento de reintegro por alcance. Los demás supuestos se tramitan en expediente administrativo: lo incoa y resuelve el Gobierno si el responsable tiene condición de autoridad, y el Ministro de Hacienda en el resto de casos. Esa resolución se recurre ante la Sala de Justicia del Tribunal de Cuentas en dos meses.",
+      "trampas_por_opcion": [
+        "Inventa un recurso de alzada. El Ministro de Hacienda es quien resuelve el expediente.",
+        "Plazo correcto pero órgano equivocado: la vía es contable, no contencioso-administrativa.",
+        "Correcta: artículo 180.2.",
+        "Órgano correcto pero plazo alterado."
+      ]
+    }
+  ]
+}
