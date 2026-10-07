@@ -1,0 +1,11 @@
+# Contiene la API key de Gemini: nunca al repositorio
+config_local.json
+
+# Estado local de la app y PDFs del temario (viven en Drive)
+*.db
+*.pdf
+static/
+
+__pycache__/
+.DS_Store
+.venv/
