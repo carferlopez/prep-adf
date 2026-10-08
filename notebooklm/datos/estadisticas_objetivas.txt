@@ -1,0 +1,244 @@
+[
+ {
+  "grupo": "CONOCIMIENTOS (126)",
+  "n": 126,
+  "con_respuesta": 114,
+  "termina_?": "93/126 (74%)",
+  "termina_:": "31/126 (25%)",
+  "termina_...": "2/126 (2%)",
+  "abre_citando_norma": "83/126 (66%)",
+  "menciona_norma_en_enunciado": "119/126 (94%)",
+  "cita_articulo": "21/126 (17%)",
+  "negativa": "19/126 (15%)",
+  "negativa_mayusculas": "16/126 (13%)",
+  "pide_correcta_explicita": "7/126 (6%)",
+  "supuesto_practico": "3/126 (2%)",
+  "long_enunciado_mediana": 168.5,
+  "long_enunciado_max": 416,
+  "long_opcion_mediana": 58.0,
+  "posicion_correcta": {
+   "A": "29/114 (25%)",
+   "B": "30/114 (26%)",
+   "C": "34/114 (30%)",
+   "D": "21/114 (18%)"
+  },
+  "correcta_es_la_mas_larga": "47/114 (41%)",
+  "correcta_es_la_mas_corta": "29/114 (25%)",
+  "opciones_con_prefijo_comun>=10car": "15/126 (12%)",
+  "opciones_numericas": "11/126 (9%)",
+  "opcion_absoluta(siempre/nunca/en ningún caso/exclusivamente/solo/en todo caso)": "35/126 (28%)",
+  "absolutos: veces que la opción con absoluto es la correcta": "7 de 59 opciones con absoluto",
+  "todas/ninguna_anteriores": "0/126 (0%)"
+ },
+ {
+  "grupo": "Conocimiento Específico (resto perfiles técnicos) | PNI25/02 Cuadro Técnico 2025",
+  "n": 18,
+  "con_respuesta": 18,
+  "termina_?": "17/18 (94%)",
+  "termina_:": "1/18 (6%)",
+  "termina_...": "0/18 (0%)",
+  "abre_citando_norma": "15/18 (83%)",
+  "menciona_norma_en_enunciado": "15/18 (83%)",
+  "cita_articulo": "0/18 (0%)",
+  "negativa": "3/18 (17%)",
+  "negativa_mayusculas": "3/18 (17%)",
+  "pide_correcta_explicita": "1/18 (6%)",
+  "supuesto_practico": "0/18 (0%)",
+  "long_enunciado_mediana": 170.0,
+  "long_enunciado_max": 416,
+  "long_opcion_mediana": 42.5,
+  "posicion_correcta": {
+   "A": "3/18 (17%)",
+   "B": "3/18 (17%)",
+   "C": "8/18 (44%)",
+   "D": "4/18 (22%)"
+  },
+  "correcta_es_la_mas_larga": "6/18 (33%)",
+  "correcta_es_la_mas_corta": "4/18 (22%)",
+  "opciones_con_prefijo_comun>=10car": "3/18 (17%)",
+  "opciones_numericas": "2/18 (11%)",
+  "opcion_absoluta(siempre/nunca/en ningún caso/exclusivamente/solo/en todo caso)": "3/18 (17%)",
+  "absolutos: veces que la opción con absoluto es la correcta": "0 de 6 opciones con absoluto",
+  "todas/ninguna_anteriores": "0/18 (0%)"
+ },
+ {
+  "grupo": "Conocimiento Específico (Área Gestión) | PNI25/02 Cuadro Técnico 2025",
+  "n": 18,
+  "con_respuesta": 18,
+  "termina_?": "17/18 (94%)",
+  "termina_:": "1/18 (6%)",
+  "termina_...": "0/18 (0%)",
+  "abre_citando_norma": "13/18 (72%)",
+  "menciona_norma_en_enunciado": "17/18 (94%)",
+  "cita_articulo": "8/18 (44%)",
+  "negativa": "3/18 (17%)",
+  "negativa_mayusculas": "3/18 (17%)",
+  "pide_correcta_explicita": "0/18 (0%)",
+  "supuesto_practico": "1/18 (6%)",
+  "long_enunciado_mediana": 214.0,
+  "long_enunciado_max": 251,
+  "long_opcion_mediana": 57.0,
+  "posicion_correcta": {
+   "A": "4/18 (22%)",
+   "B": "4/18 (22%)",
+   "C": "6/18 (33%)",
+   "D": "4/18 (22%)"
+  },
+  "correcta_es_la_mas_larga": "13/18 (72%)",
+  "correcta_es_la_mas_corta": "4/18 (22%)",
+  "opciones_con_prefijo_comun>=10car": "1/18 (6%)",
+  "opciones_numericas": "2/18 (11%)",
+  "opcion_absoluta(siempre/nunca/en ningún caso/exclusivamente/solo/en todo caso)": "5/18 (28%)",
+  "absolutos: veces que la opción con absoluto es la correcta": "1 de 9 opciones con absoluto",
+  "todas/ninguna_anteriores": "0/18 (0%)"
+ },
+ {
+  "grupo": "Conocimiento General | PNI25/02 Cuadro Técnico 2025",
+  "n": 18,
+  "con_respuesta": 18,
+  "termina_?": "9/18 (50%)",
+  "termina_:": "9/18 (50%)",
+  "termina_...": "0/18 (0%)",
+  "abre_citando_norma": "10/18 (56%)",
+  "menciona_norma_en_enunciado": "16/18 (89%)",
+  "cita_articulo": "2/18 (11%)",
+  "negativa": "2/18 (11%)",
+  "negativa_mayusculas": "2/18 (11%)",
+  "pide_correcta_explicita": "0/18 (0%)",
+  "supuesto_practico": "0/18 (0%)",
+  "long_enunciado_mediana": 127.5,
+  "long_enunciado_max": 287,
+  "long_opcion_mediana": 80.5,
+  "posicion_correcta": {
+   "A": "5/18 (28%)",
+   "B": "7/18 (39%)",
+   "C": "4/18 (22%)",
+   "D": "2/18 (11%)"
+  },
+  "correcta_es_la_mas_larga": "9/18 (50%)",
+  "correcta_es_la_mas_corta": "2/18 (11%)",
+  "opciones_con_prefijo_comun>=10car": "3/18 (17%)",
+  "opciones_numericas": "1/18 (6%)",
+  "opcion_absoluta(siempre/nunca/en ningún caso/exclusivamente/solo/en todo caso)": "8/18 (44%)",
+  "absolutos: veces que la opción con absoluto es la correcta": "4 de 16 opciones con absoluto",
+  "todas/ninguna_anteriores": "0/18 (0%)"
+ },
+ {
+  "grupo": "Conocimientos (temario común Técnico) | PNI23/03 Técnico 2023",
+  "n": 36,
+  "con_respuesta": 30,
+  "termina_?": "24/36 (67%)",
+  "termina_:": "11/36 (31%)",
+  "termina_...": "1/36 (3%)",
+  "abre_citando_norma": "17/36 (47%)",
+  "menciona_norma_en_enunciado": "36/36 (100%)",
+  "cita_articulo": "6/36 (17%)",
+  "negativa": "7/36 (19%)",
+  "negativa_mayusculas": "4/36 (11%)",
+  "pide_correcta_explicita": "5/36 (14%)",
+  "supuesto_practico": "2/36 (6%)",
+  "long_enunciado_mediana": 173.5,
+  "long_enunciado_max": 397,
+  "long_opcion_mediana": 59.5,
+  "posicion_correcta": {
+   "A": "11/30 (37%)",
+   "B": "7/30 (23%)",
+   "C": "6/30 (20%)",
+   "D": "6/30 (20%)"
+  },
+  "correcta_es_la_mas_larga": "10/30 (33%)",
+  "correcta_es_la_mas_corta": "9/30 (30%)",
+  "opciones_con_prefijo_comun>=10car": "5/36 (14%)",
+  "opciones_numericas": "3/36 (8%)",
+  "opcion_absoluta(siempre/nunca/en ningún caso/exclusivamente/solo/en todo caso)": "9/36 (25%)",
+  "absolutos: veces que la opción con absoluto es la correcta": "1 de 12 opciones con absoluto",
+  "todas/ninguna_anteriores": "0/36 (0%)"
+ },
+ {
+  "grupo": "Conocimientos (temario común Técnico) | PNI23/04 Técnico AV 2023",
+  "n": 36,
+  "con_respuesta": 30,
+  "termina_?": "26/36 (72%)",
+  "termina_:": "9/36 (25%)",
+  "termina_...": "1/36 (3%)",
+  "abre_citando_norma": "28/36 (78%)",
+  "menciona_norma_en_enunciado": "35/36 (97%)",
+  "cita_articulo": "5/36 (14%)",
+  "negativa": "4/36 (11%)",
+  "negativa_mayusculas": "4/36 (11%)",
+  "pide_correcta_explicita": "1/36 (3%)",
+  "supuesto_practico": "0/36 (0%)",
+  "long_enunciado_mediana": 168.5,
+  "long_enunciado_max": 338,
+  "long_opcion_mediana": 63.0,
+  "posicion_correcta": {
+   "A": "6/30 (20%)",
+   "B": "9/30 (30%)",
+   "C": "10/30 (33%)",
+   "D": "5/30 (17%)"
+  },
+  "correcta_es_la_mas_larga": "9/30 (30%)",
+  "correcta_es_la_mas_corta": "10/30 (33%)",
+  "opciones_con_prefijo_comun>=10car": "3/36 (8%)",
+  "opciones_numericas": "3/36 (8%)",
+  "opcion_absoluta(siempre/nunca/en ningún caso/exclusivamente/solo/en todo caso)": "10/36 (28%)",
+  "absolutos: veces que la opción con absoluto es la correcta": "1 de 16 opciones con absoluto",
+  "todas/ninguna_anteriores": "0/36 (0%)"
+ },
+ {
+  "grupo": "INGLÉS (54)",
+  "n": 54,
+  "con_respuesta": 48,
+  "termina_?": "1/54 (2%)",
+  "termina_:": "0/54 (0%)",
+  "termina_...": "0/54 (0%)",
+  "abre_citando_norma": "0/54 (0%)",
+  "menciona_norma_en_enunciado": "0/54 (0%)",
+  "cita_articulo": "0/54 (0%)",
+  "negativa": "0/54 (0%)",
+  "negativa_mayusculas": "0/54 (0%)",
+  "pide_correcta_explicita": "0/54 (0%)",
+  "supuesto_practico": "0/54 (0%)",
+  "long_enunciado_mediana": 63.5,
+  "long_enunciado_max": 147,
+  "long_opcion_mediana": 9.0,
+  "posicion_correcta": {
+   "A": "18/48 (38%)",
+   "B": "11/48 (23%)",
+   "C": "9/48 (19%)",
+   "D": "10/48 (21%)"
+  },
+  "correcta_es_la_mas_larga": "22/48 (46%)",
+  "correcta_es_la_mas_corta": "10/48 (21%)",
+  "opciones_con_prefijo_comun>=10car": "1/54 (2%)",
+  "opciones_numericas": "0/54 (0%)",
+  "opcion_absoluta(siempre/nunca/en ningún caso/exclusivamente/solo/en todo caso)": "0/54 (0%)",
+  "absolutos: veces que la opción con absoluto es la correcta": "0 de 0 opciones con absoluto",
+  "todas/ninguna_anteriores": "0/54 (0%)"
+ }
+]
+
+NORMAS (por enunciado, 1ª coincidencia):
+   16  Ley 38/2015 Sector Ferroviario: {'Conocimientos': 9, 'Conocimiento General': 1, 'Conocimiento Específico': 6}
+   13  Ley 21/2013 Evaluación ambiental: {'Conocimientos': 6, 'Conocimiento Específico': 7}
+    8  Declaración sobre la Red: {'Conocimientos': 6, 'Conocimiento General': 2}
+    8  LO 3/2018 Protección de Datos: {'Conocimientos': 7, 'Conocimiento General': 1}
+    8  Ley 9/2017 (LCSP): {'Conocimientos': 6, 'Conocimiento General': 2}
+    8  LGSS RDL 8/2015: {'Conocimiento Específico Gestión': 8}
+    6  ET RDL 2/2015: {'Conocimiento Específico Gestión': 6}
+    5  Ley 31/1995 PRL: {'Conocimientos': 4, 'Conocimiento General': 1}
+    5  Ley 39/2015 (LPACAP): {'Conocimientos': 4, 'Conocimiento General': 1}
+    5  Estatuto ADIF RD 2395/2004: {'Conocimientos': 4, 'Conocimiento General': 1}
+    5  Reglamento (UE) 402/2013 (MCS riesgos): {'Conocimientos': 4, 'Conocimiento General': 1}
+    5  Reglamento Delegado (UE) 2018/762 (SGS): {'Conocimientos': 4, 'Conocimiento General': 1}
+    5  Ley 40/2015 (LRJSP): {'Conocimientos': 4, 'Conocimiento General': 1}
+    5  RD 311/2022 ENS: {'Conocimientos': 3, 'Conocimiento General': 2}
+    4  RD 929/2020 seguridad operacional: {'Conocimientos': 4}
+    4  Ley 47/2003 LGP: {'Conocimiento Específico Gestión': 4}
+    3  LO 3/2007 Igualdad: {'Conocimientos': 2, 'Conocimiento General': 1}
+    3  Ley 53/1984 Incompatibilidades: {'Conocimientos': 2, 'Conocimiento General': 1}
+    3  Canal ético / antifraude Adif: {'Conocimiento Específico': 3}
+    2  Ley 19/2013 Transparencia: {'Conocimiento Específico': 2}
+    1  Ley 4/2023 trans/LGTBI: {'Conocimiento General': 1}
+    1  TREBEP RDL 5/2015: {'Conocimiento General': 1}
+SIN NORMA DETECTADA: [(73, 'De acuerdo con su Estatuto, ¿qué capacidad de endeudamiento tiene ADIF-Alta Velocidad?'), (86, 'Según lo establecido en el artículo 23 del Real Decreto 1044/2013, de 27 de diciembre, por el que se aprueba el Estatuto'), (104, 'Un responsable del tratamiento va a proceder a una supresión de datos personales, cumpliendo con la solicitud del afecta')]

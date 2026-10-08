@@ -11,6 +11,7 @@ Preparación de la OEP 2026 de ADIF (Técnico: Gestión y Comunicación). Incluy
 | `estilo/ejemplos.json` | Corpus de esas preguntas oficiales, con la respuesta de la plantilla correctora cuando existe. |
 | `banco/*.json` | Preguntas redactadas y revisadas por tema, cada una con su cita literal del BOE. |
 | `scripts/` | Extracción de exámenes, validación del banco e importación en la app. |
+| `notebooklm/` | Radiografía del Tribunal (Técnico 2023, Técnico AV 2023 y Cuadro Técnico 2025), las 180 preguntas oficiales anotadas y los prompts para generar cuestionarios y material de estudio en NotebookLM (Gemini Notebook). |
 
 ## Uso
 
@@ -45,3 +46,23 @@ Para que la app encuentre la guía y los ejemplos, copia `estilo/` dentro de `AD
 | Tema | Preguntas | Citas verificadas |
 |---|---|---|
 | Gestión 02 · Ley 47/2003 General Presupuestaria | 30 | 30/30 |
+
+## Radiografía del Tribunal para NotebookLM
+
+`notebooklm/` contiene el material para usar NotebookLM (desde julio de 2026, Gemini Notebook) como generador de tests al estilo del Tribunal. Las instrucciones de uso están en `notebooklm/README.md`.
+
+| Fichero | Para qué |
+|---|---|
+| `01_radiografia_tribunal.md` | Cómo pregunta el Tribunal: cifras, algoritmo, plantillas de enunciado, recetas de distractores, mapa de contenidos, trampas, inglés y estrategia. Se sube como fuente. |
+| `02_preguntas_oficiales_anotadas.md` | Las 180 preguntas oficiales (126 de conocimientos y 54 de inglés) con su clave y su anotación. Se sube como fuente. |
+| `03_prompts_notebooklm.md` | Prompts P0–P9 listos para pegar (chat, Cuestionario, Tarjetas, guía de estudio, simulacro, análisis de fallos, inglés, auditoría y audio). |
+
+Para regenerarlo con otros cuadernillos:
+
+```bash
+python3 scripts/radiografia_extraer.py t2023.pdf:"PNI23/03 Técnico 2023" av2023.pdf:"PNI23/04 Técnico AV 2023" c2025.pdf:"PNI25/02 Cuadro Técnico 2025" -o preguntas.json
+python3 scripts/radiografia_estadisticas.py notebooklm/datos/preguntas_oficiales_2023_2025.json > notebooklm/datos/estadisticas_objetivas.txt
+python3 scripts/radiografia_corpus_anotado.py notebooklm/datos/preguntas_oficiales_2023_2025.json -o notebooklm/02_preguntas_oficiales_anotadas.md
+```
+
+Las anotaciones de cada pregunta (norma, artículo, tipo de dato, distractores y trampa) se hicieron con un análisis asistido por IA, con una revisión dirigida de los casos dudosos. Hay que contrastar el artículo con el BOE consolidado antes de memorizarlo.
