@@ -11,7 +11,7 @@ Preparación de la OEP 2026 de ADIF (Técnico: Gestión y Comunicación). Incluy
 | `estilo/ejemplos.json` | Corpus de esas preguntas oficiales, con la respuesta de la plantilla correctora cuando existe. |
 | `banco/*.json` | Preguntas redactadas y revisadas por tema, cada una con su cita literal del BOE. |
 | `scripts/` | Extracción de exámenes, validación del banco e importación en la app. |
-| `notebooklm/` | Radiografía del Tribunal (Técnico 2023, Técnico AV 2023 y Cuadro Técnico 2025), las 180 preguntas oficiales anotadas y los prompts para generar cuestionarios y material de estudio en NotebookLM (Gemini Notebook). |
+| `notebooklm/` | Radiografía del Tribunal (Técnico 2023, Técnico AV 2023 y Cuadro Técnico 2025), las 180 preguntas oficiales anotadas y el prompt maestro para estudiar en NotebookLM (Gemini Notebook). |
 
 ## Uso
 
@@ -49,13 +49,13 @@ Para que la app encuentre la guía y los ejemplos, copia `estilo/` dentro de `AD
 
 ## Radiografía del Tribunal para NotebookLM
 
-`notebooklm/` contiene el material para usar NotebookLM (desde julio de 2026, Gemini Notebook) como generador de tests al estilo del Tribunal. Las instrucciones de uso están en `notebooklm/README.md`.
+`notebooklm/` contiene el material para usar NotebookLM (desde julio de 2026, Gemini Notebook) como generador de tests al estilo del Tribunal. Las instrucciones de uso, en 4 pasos, están en `notebooklm/README.md`.
 
 | Fichero | Para qué |
 |---|---|
+| `PROMPT_MAESTRO.md` | El único texto que hay que copiar: se pega una vez en las instrucciones del chat de cada cuaderno (General, Gestión e Inglés). Después basta con escribir `Norma: …`, las respuestas, `Otra ronda` o `Simulacro`. |
 | `01_radiografia_tribunal.md` | Cómo pregunta el Tribunal: cifras, algoritmo, plantillas de enunciado, recetas de distractores, mapa de contenidos, trampas, inglés y estrategia. Se sube como fuente. |
 | `02_preguntas_oficiales_anotadas.md` | Las 180 preguntas oficiales (126 de conocimientos y 54 de inglés) con su clave y su anotación. Se sube como fuente. |
-| `03_prompts_notebooklm.md` | Prompts P0–P9 listos para pegar (chat, Cuestionario, Tarjetas, guía de estudio, simulacro, análisis de fallos, inglés, auditoría y audio). |
 
 Para regenerarlo con otros cuadernillos:
 
