@@ -1,16 +1,73 @@
-# Prompt maestro
+# Prompts maestros
 
-Es el único texto que tienes que copiar. Pégalo **una vez en cada cuaderno**: Chat → icono de ajustes → «Configurar chat» → «Personalizado». Sirve igual para los tres cuadernos (General, Específico de Gestión e Inglés), porque deduce el bloque por las fuentes que tenga cada uno.
+Hay dos y cada uno tiene un papel:
 
-A partir de ahí, en el chat solo escribes:
+1. **Informe interactivo**: lo principal. Uno por norma y sirve para aprender y practicar.
+2. **Chat**: opcional. Para simulacros cronometrados del bloque y para dudas sueltas.
+
+## 1. Informe interactivo (uno por norma)
+
+**Dónde:** Studio → Informes → informe interactivo / guía de estudio interactiva → pega el texto.
+
+**Fuentes marcadas:** la norma que vas a estudiar y las dos guías («Radiografía del Tribunal» y «Preguntas oficiales anotadas»).
+
+**Qué cambias:** solo la primera línea (`NORMA:`). Para repasar un bloque entero, marca todas sus normas y escribe `NORMA: todas las fuentes marcadas`.
+
+**Longitud:** 3.762 caracteres. El límite son 5.000, y sobra margen aunque escribas el nombre completo de la norma.
+
+```text
+NORMA: [escribe aquí la norma, p. ej. «Ley 39/2015, del Procedimiento Administrativo Común», o «todas las fuentes marcadas» para un bloque]
+
+Crea una guía de estudio interactiva de la NORMA para el test de Adif (OEP 2026, Técnico / Cuadro Técnico, perfil Gestión). Español de España, directo y sin relleno.
+
+FUENTES
+- El temario es el texto oficial de la NORMA. Todo dato sale de ahí, con su artículo y su cita literal. Si algo no consta, no lo pongas. Si la norma ha cambiado, avisa y usa la versión vigente.
+- «Radiografía del Tribunal» y «Preguntas oficiales anotadas» solo enseñan CÓMO pregunta el tribunal. No son temario: nada de preguntas, tarjetas ni resúmenes sobre ellas. De las preguntas oficiales, usa solo las de la NORMA y no las copies.
+
+OBJETIVO
+Que domine los datos examinables de la NORMA y no caiga en las trampas del tribunal. Si la norma es larga, prioriza lo examinable. Elige tú el mejor formato para cada tipo de dato:
+- Cifras, plazos, órganos y listas: tarjetas (memoria pura).
+- Procedimientos con fases y actores: infografía o diagrama de flujo (quién hace qué y en qué orden).
+- Tipos, clases o regímenes parecidos: tabla comparativa.
+- Lógica y sentido de la norma: explicación breve, audio o vídeo.
+- Matices y trampas: cuestionario que explique cada opción.
+
+ESTRUCTURA
+1. Mapa en una pantalla: qué partes son examinables, qué ha preguntado ya el tribunal (Q-id), zonas calientes y con qué otra norma se confunde.
+2. Un módulo por cada parte examinable, con:
+   - Ficha: QUIÉN (órgano → competencia), CUÁNTO (plazos, cifras y umbrales, marcando los de las excepciones), LISTAS CERRADAS (número de elementos y cuáles son), REGLA Y EXCEPCIONES y DEFINICIONES. Cada dato, con su artículo y la cita literal decisiva.
+   - Cómo entenderlo: la regla en dos frases sencillas con un ejemplo cotidiano, solo en los datos que se confunden.
+   - Pares confundibles: dato correcto | con qué se confunde | cómo distinguirlos.
+   - Trampas probables del tribunal en esa parte.
+   - Minitest de 3 a 5 preguntas con corrección inmediata.
+3. Test final de 15 preguntas al estilo del tribunal. Corrección con Aciertos − Errores/3 y, para cada opción, por qué es correcta o falsa (cita literal y tipo de trampa).
+4. Repaso exprés: los 15 datos con más probabilidad de caer, para la víspera.
+Si la NORMA es «todas las fuentes marcadas», haz un módulo por norma y un test final de 15 preguntas con 2 como máximo por norma.
+
+CÓMO PREGUNTA EL TRIBUNAL (cúmplelo en todos los tests)
+- La correcta copia el texto de la norma, literal o casi literal.
+- Pregunta datos examinables: quién, cuánto, listas (cuál NO / cuál sí), requisitos, derechos y deberes, definiciones, regla y excepción, ámbito y efectos. Nunca fechas de publicación ni derogaciones.
+- 4 opciones y una sola correcta. Nunca «todas/ninguna de las anteriores».
+- Unas 2/3 preguntas directas («Según la [norma], ¿…?»), 1/6 frases a completar que acaban en «:» y el resto «Señale la afirmación CORRECTA / INCORRECTA». Alrededor del 15 % negativas, con NO o INCORRECTA en mayúsculas; en ellas, las tres opciones que no se marcan son frases verdaderas y literales.
+- Distractores reales de la misma norma o de la vecina: órgano cambiado, cifra contigua o la de la excepción, elemento de la lista vecina, excepción convertida en regla, condición añadida o suprimida, absoluto añadido («siempre», «en todo caso», «exclusivamente»), término casi igual, un «no» o un «sin» que invierte el sentido. Como mucho uno absurdo.
+- Opciones paralelas y de longitud parecida. La correcta no siempre es la más larga ni la única sin absoluto. Letras repartidas.
+- Niveles: de cada 10 preguntas, 4 directas, 5 con trampa fina y 1 de excepción o dato secundario.
+- Ningún distractor puede ser también verdadero.
+```
+
+## 2. Chat (opcional: simulacros y dudas)
+
+**Dónde:** pégalo una vez en cada cuaderno, en Chat → icono de ajustes → «Configurar chat» → «Personalizado». Ocupa 6.218 caracteres y el límite es de 10.000. Deduce el bloque por las fuentes del cuaderno.
+
+Después, en el chat solo escribes:
 
 | Escribes | Qué hace |
 |---|---|
-| `Norma: Ley 39/2015` (o `Tema: recursos administrativos`) | Sesión completa: radiografía de la norma, ficha esencial, test de 10 preguntas sin soluciones y los formatos del Studio que mejor te la fijan. |
-| `1b 2d 3- 4a …` (el guion es en blanco) | Corrige con Aciertos − Errores/3, explica cada fallo y te pone una pregunta gemela. |
-| `Otra ronda` | 10 preguntas nuevas de la misma norma, insistiendo en lo que fallaste. |
 | `Simulacro` | Examen del bloque con la estructura real: 15 + 3 de reserva, en 15 minutos. |
+| `1b 2d 3- 4a …` (el guion es en blanco) | Corrige con Aciertos − Errores/3, explica cada fallo y te pone una pregunta gemela. |
 | `Inglés` | 15 preguntas de inglés al estilo del tribunal. |
+| `Norma: Ley 39/2015` | Sesión rápida en el chat: ficha, test de 10 y formatos recomendados. Sirve si no quieres generar un informe. |
+| `Otra ronda` | 10 preguntas nuevas de la misma norma, insistiendo en lo que fallaste. |
 
 ```text
 Eres mi preparador del examen de Adif (OEP 2026, Técnico / Cuadro Técnico, perfil Gestión). Español de España, directo y sin relleno.

@@ -49,11 +49,11 @@ Para que la app encuentre la guía y los ejemplos, copia `estilo/` dentro de `AD
 
 ## Radiografía del Tribunal para NotebookLM
 
-`notebooklm/` contiene el material para usar NotebookLM (desde julio de 2026, Gemini Notebook) como generador de tests al estilo del Tribunal. Las instrucciones de uso, en 4 pasos, están en `notebooklm/README.md`.
+`notebooklm/` contiene el material para usar NotebookLM (desde julio de 2026, Gemini Notebook) como generador de tests al estilo del Tribunal. Las instrucciones de uso, en 3 pasos, están en `notebooklm/README.md`.
 
 | Fichero | Para qué |
 |---|---|
-| `PROMPT_MAESTRO.md` | El único texto que hay que copiar: se pega una vez en las instrucciones del chat de cada cuaderno (General, Gestión e Inglés). Después basta con escribir `Norma: …`, las respuestas, `Otra ronda` o `Simulacro`. |
+| `PROMPT_MAESTRO.md` | Los dos textos que hay que copiar. El prompt 1 es para el informe interactivo del Studio: uno por norma, cambiando solo la línea `NORMA:`. El prompt 2, opcional, va una vez en las instrucciones del chat de cada cuaderno, para simulacros y corrección de fallos. |
 | `01_radiografia_tribunal.md` | Cómo pregunta el Tribunal: cifras, algoritmo, plantillas de enunciado, recetas de distractores, mapa de contenidos, trampas, inglés y estrategia. Se sube como fuente. |
 | `02_preguntas_oficiales_anotadas.md` | Las 180 preguntas oficiales (126 de conocimientos y 54 de inglés) con su clave y su anotación. Se sube como fuente. |
 
