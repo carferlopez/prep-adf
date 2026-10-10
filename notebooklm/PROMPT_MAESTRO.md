@@ -1,11 +1,12 @@
 # Prompts maestros
 
-Hay cuatro y cada uno tiene un papel:
+Hay cinco y cada uno tiene un papel:
 
 1. **Informe interactivo de normas**: lo principal. Uno por norma y sirve para aprender y practicar.
 2. **Informe interactivo de inglés**: lo mismo para el test de inglés.
 3. **Informe interactivo de psicotécnico**: lo mismo para el test psicométrico.
-4. **Chat**: opcional. Para simulacros cronometrados del bloque y para dudas sueltas.
+4. **Simulacro interactivo de temario común**: el examen del bloque común entero, corregido y con diagnóstico por norma.
+5. **Chat**: opcional. Para dudas sueltas y para simulacros cuando no quieras generar un informe.
 
 ## 1. Informe interactivo de normas (uno por norma)
 
@@ -160,7 +161,56 @@ CÓMO DEBEN SER LOS ÍTEMS
 - Recuérdame la estrategia: si descarto al menos una opción, contesto; si no descarto ninguna, la dejo en blanco.
 ```
 
-## 4. Chat (opcional: simulacros y dudas)
+## 4. Simulacro interactivo de temario común
+
+**Dónde:** en el cuaderno General, Studio → Informes → informe interactivo → pega el texto.
+
+**Fuentes marcadas:** todas, es decir, las normas del temario común y las dos guías.
+
+**Qué cambias:** nada, si quieres el formato de 2025 (15 preguntas + 3 de reserva). Las dos primeras líneas son opcionales:
+- `FORMATO`: escribe `30 + 6` si prefieres el formato de 2023.
+- `REFUERZO`: escribe las normas o temas que más fallas para que pesen más.
+
+**Longitud:** 3.599 caracteres de 5.000.
+
+Cada vez que generes el informe saldrá un simulacro nuevo, aunque puede repetir algún dato. Al terminar, el diagnóstico te dice qué 3 normas reforzar: estúdialas con el prompt 1 y ponlas en `REFUERZO` en el siguiente simulacro.
+
+```text
+FORMATO: 15 + 3, como el Conocimiento General de 2025 (o escribe «30 + 6», como el temario común de 2023)
+REFUERZO: ninguno (o escribe las normas o temas que más fallas, para que pesen más)
+
+Crea un simulacro interactivo del test de temario común de Adif (OEP 2026) con todas las normas marcadas. Español de España.
+
+FUENTES
+- El temario son las normas oficiales del cuaderno. Cada pregunta sale de un artículo concreto y la correcta se apoya en una cita literal. Si una norma ha cambiado, usa la versión vigente.
+- «Radiografía del Tribunal» y «Preguntas oficiales anotadas» solo enseñan cómo pregunta el tribunal. No son temario: no preguntes sobre ellas ni copies preguntas oficiales.
+
+REPARTO
+- 15 + 3: una pregunta por norma (15) y 3 de reserva (16-18) de tres normas distintas. Ninguna norma con más de 2 preguntas.
+- 30 + 6: dos preguntas por norma, de artículos distintos, y 6 de reserva (31-36).
+- Prioriza las zonas calientes de la sección 6.3 de la Radiografía. Si hay REFUERZO, da preferencia a esas normas en las reservas y en los datos más difíciles, sin pasar de 2 preguntas por norma en 15 + 3.
+- Mezcla las normas en el orden de las preguntas: no las agrupes.
+
+ESTILO DEL CONOCIMIENTO GENERAL (Radiografía, secciones 2.9, 3, 5 y 9)
+- Enunciados cortos, de unos 130 caracteres: la mitad acaba en «?» y la otra mitad son frases a completar que acaban en «:». Abre citando la norma en 2 de cada 3 («Según la Ley 39/2015, ¿…?»).
+- Dos tercios de nivel 1 (dato principal) y un tercio de nivel 2 (trampa fina). Las reservas, algo más difíciles.
+- La correcta copia el texto de la norma, literal o casi literal. Pregunta datos examinables: quién, cuánto, listas (cuál NO / cuál sí), requisitos, derechos y deberes, definiciones, regla y excepción, ámbito y efectos. Nunca fechas de publicación ni derogaciones.
+- 4 opciones y una sola correcta. Nunca «todas/ninguna de las anteriores».
+- Alrededor del 15 % negativas, con NO o INCORRECTA en mayúsculas; en ellas, las otras tres opciones son frases verdaderas y literales.
+- Distractores reales de la misma norma o de la vecina: órgano cambiado, cifra contigua o la de la excepción, elemento de la lista vecina, excepción convertida en regla, condición añadida o suprimida, absoluto añadido, término casi igual, un «no» que invierte el sentido. Como mucho uno absurdo. En este bloque abundan los absolutos («siempre», «nunca», «en todo caso»), pero alguno debe ser la correcta.
+- Opciones paralelas y de longitud parecida. La correcta no siempre es la más larga. Letras repartidas, sin más de tres iguales seguidas.
+- Ningún distractor puede ser también verdadero.
+
+ESTRUCTURA DEL INFORME
+1. Instrucciones: 15 minutos para 15 + 3 (30 minutos para 30 + 6), sin consultar nada. Contesta solo si descartas al menos una opción.
+2. El test, numerado, para responder de forma interactiva. Las soluciones no se ven hasta terminar.
+3. Corrección: tabla n.º | norma | mi respuesta | correcta | acierto, fallo o blanco. Nota con Aciertos − Errores/3 sobre las preguntas ordinarias (las reservas, aparte), en porcentaje y comparada con el mínimo del 40 %. Si el informe no puede registrar mis respuestas, pon al final una tabla de soluciones (n.º | correcta | norma | artículo) y la fórmula para que me corrija yo.
+4. Solución explicada de cada pregunta: cita literal y artículo, por qué falla cada distractor y el tipo de trampa (T1-T16 de la Radiografía).
+5. Diagnóstico por norma: tabla norma | resultado | dato que hay que repasar. Las 3 normas más débiles y qué estudiar de cada una.
+6. Tarjetas de repaso con los datos de las preguntas falladas.
+```
+
+## 5. Chat (opcional: dudas y simulacros sin informe)
 
 **Dónde:** pégalo una vez en cada cuaderno, en Chat → icono de ajustes → «Configurar chat» → «Personalizado». Ocupa 6.218 caracteres y el límite es de 10.000. Deduce el bloque por las fuentes del cuaderno.
 

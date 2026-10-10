@@ -28,9 +28,11 @@ Para repasar un bloque entero, marca todas sus normas y escribe `NORMA: todas la
 
 **Inglés y psicotécnico:** en su cuaderno, usa el **prompt 2** (inglés) o el **prompt 3** (psicotécnico) en un informe interactivo y cambia solo la línea `FOCO:`. Puedes poner `todo el test`, un punto concreto como `condicionales` o `series numéricas`, o `mis fallos: …`.
 
-## 3. Simulacro semanal en el chat (opcional)
+## 3. Simulacro semanal
 
-Pega el **prompt 4** de `PROMPT_MAESTRO.md` una vez en cada cuaderno: Chat → icono de ajustes → «Configurar chat» → «Personalizado». Después escribe:
+**Temario común:** en el cuaderno General, marca todas las fuentes, abre Studio → Informes → informe interactivo y pega el **prompt 4**. Te hace un test de 15 preguntas + 3 de reserva, lo corrige con Aciertos − Errores/3 y te dice qué 3 normas reforzar. Si quieres el formato de 2023 (30 + 6) o insistir en algunas normas, cambia las dos primeras líneas.
+
+**Chat (opcional):** pega el **prompt 5** una vez en cada cuaderno, en Chat → icono de ajustes → «Configurar chat» → «Personalizado». Sirve para el simulacro del bloque de Gestión y para dudas sueltas. Después escribe:
 
 - `Simulacro`: 15 + 3 preguntas del bloque en 15 minutos.
 - Tus respuestas, así: `1b 2d 3- 4a…` (el guion es en blanco). Te corrige con Aciertos − Errores/3 y te explica los fallos.
@@ -45,7 +47,7 @@ Pega el **prompt 4** de `PROMPT_MAESTRO.md` una vez en cada cuaderno: Chat → i
 
 | Fichero | Qué haces con él |
 |---|---|
-| `PROMPT_MAESTRO.md` | Lo copias: en los informes (paso 2), el prompt 1 para normas, el 2 para inglés y el 3 para psicotécnico; el prompt 4 va en el chat (paso 3). |
+| `PROMPT_MAESTRO.md` | Lo copias. En los informes del paso 2: el prompt 1 para normas, el 2 para inglés y el 3 para psicotécnico. En el paso 3: el prompt 4 para el simulacro de temario común y el 5 en el chat. |
 | `01_radiografia_tribunal.md` | Lo subes como fuente. Es el análisis completo de cómo pregunta el tribunal, por si quieres consultarlo. |
 | `02_preguntas_oficiales_anotadas.md` | Lo subes como fuente. Son las 180 preguntas oficiales de 2023 y 2025 con su clave y su anotación. |
 | `datos/` | Datos y estadísticas de los que salen las dos guías. No hace falta tocarlo. |
