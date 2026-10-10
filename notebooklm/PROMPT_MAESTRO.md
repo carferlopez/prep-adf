@@ -1,11 +1,12 @@
 # Prompts maestros
 
-Hay dos y cada uno tiene un papel:
+Hay tres y cada uno tiene un papel:
 
-1. **Informe interactivo**: lo principal. Uno por norma y sirve para aprender y practicar.
-2. **Chat**: opcional. Para simulacros cronometrados del bloque y para dudas sueltas.
+1. **Informe interactivo de normas**: lo principal. Uno por norma y sirve para aprender y practicar.
+2. **Informe interactivo de inglés**: lo mismo para el test de inglés.
+3. **Chat**: opcional. Para simulacros cronometrados del bloque y para dudas sueltas.
 
-## 1. Informe interactivo (uno por norma)
+## 1. Informe interactivo de normas (uno por norma)
 
 **Dónde:** Studio → Informes → informe interactivo / guía de estudio interactiva → pega el texto.
 
@@ -55,7 +56,56 @@ CÓMO PREGUNTA EL TRIBUNAL (cúmplelo en todos los tests)
 - Ningún distractor puede ser también verdadero.
 ```
 
-## 2. Chat (opcional: simulacros y dudas)
+## 2. Informe interactivo de inglés
+
+**Dónde:** en el cuaderno de Inglés, Studio → Informes → informe interactivo → pega el texto.
+
+**Fuentes marcadas:** las dos guías.
+
+**Qué cambias:** solo la primera línea (`FOCO:`).
+- `FOCO: todo el test` repasa todos los tipos de pregunta y acaba con un test completo.
+- `FOCO: condicionales` (o cualquier otro punto) se centra en ese punto.
+- `FOCO: mis fallos: …` repasa lo que hayas fallado en los tests anteriores. Pega tus fallos detrás de los dos puntos.
+
+**Longitud:** 3.778 caracteres de 5.000.
+
+Las reglas y el vocabulario los aporta NotebookLM. Las guías solo le dicen qué pregunta el tribunal y con qué estilo, y todas las frases de práctica son nuevas.
+
+```text
+FOCO: [todo el test, o un punto concreto: «condicionales», «vocabulario de transporte», «reformulaciones», «mis fallos: …»]
+
+Crea una guía de estudio interactiva para el test de inglés de Adif (OEP 2026: 18 preguntas, 15 + 3 de reserva). Explicaciones en español de España; ejemplos y preguntas en inglés británico.
+
+FUENTES
+- La sección 8 de «Radiografía del Tribunal» y los ítems de inglés de «Preguntas oficiales anotadas» (Q1-Q18, Q55-Q72 y Q109-Q126) enseñan qué y cómo pregunta el tribunal. Úsalos para elegir los puntos y el estilo, y cita los Q-id que ya han caído. Las reglas de gramática y el vocabulario los aportas tú.
+- Todas las frases de práctica son nuevas: nunca copies ni retoques las oficiales. No hagas preguntas sobre las guías ni sobre las leyes del cuaderno.
+
+LO QUE PREGUNTA EL TRIBUNAL (prioriza según este peso)
+- Vocabulario por campos (28 %): transporte, trabajo, salud, tiendas, delincuencia, alojamiento, deporte, personalidad y relaciones. Pares que se confunden: damage/harm/injure, fare/fee/price/toll, lose/miss/leave/drop, task/chore/duty/role, referee/umpire/judge, argument/discussion/chat, take place/take part.
+- Gramática (26 %): condicionales, wish + would, it's time + pasado, modales (had to, didn't need to, would rather, had better), gerundio o infinitivo, pasiva personal, estilo indirecto, conectores, incontables y cuantificadores, artículos, comparativos (not as… as), inversión (Seldom do I…) y get used to.
+- Reformulación equivalente (19 %). El resto: colocaciones y preposiciones, idioms y proverbios, avisos y titulares, formación de palabras, phrasal verbs y registro informal.
+- Niveles: B1 46 %, B2 43 % y C1 11 %.
+
+ESTRUCTURA
+1. Mapa en una pantalla: tipos de pregunta con su peso, enunciados literales del tribunal y qué ha caído ya (Q-id). Si el FOCO es un punto concreto, céntrate en él.
+2. Un módulo por punto, con:
+   - La regla en español en dos o tres frases, con ejemplos correctos e incorrectos.
+   - Pares que se confunden y calcos del español (an advice, a good weather, the most people, discussion en vez de argument).
+   - Minitest de 4 a 6 ítems con corrección inmediata.
+   Elige tú el formato que mejor fije cada punto: tarjetas para vocabulario, pares y phrasal verbs; tablas comparativas para tiempos, modales y condicionales; infografía para estructuras con un esquema fijo; audio si ayuda a memorizar; cuestionario para los matices.
+3. Test final de 18 ítems (15 + 3 de reserva) como el real. Corrección con Aciertos − Errores/3 y, para cada opción, por qué vale o no.
+4. Repaso exprés: las 20 palabras y estructuras clave, para la víspera.
+
+CÓMO SON LOS ÍTEMS DEL TRIBUNAL (cúmplelo en todos los tests)
+- 2/3 de hueco (______) y 1/3 de significado o equivalencia.
+- Enunciados literales: «Find the best answer to the following question. Q: … A: ______.» · «Which option is equivalent / NOT equivalent to the following sentence?» · «Which option is true / correct according to the following sentence?» · «What does the following proverb / headline mean?» · «What does this sign / notice mean?» · «Which sentence best reports …'s words?»
+- Una frase cotidiana de 8 a 15 palabras con una sola pista decisiva, a menudo en una segunda oración. La correcta es la forma de manual.
+- Distractores: uno casi correcto (sinónimo que no combina, falso amigo o calco), uno del mismo campo que choca con la pista y uno de otro tiempo verbal, imposible o literal. En las de significado: invertir el sentido, leer literal o repetir una palabra del enunciado. A veces, un cuadro 2×2 (dos variables combinadas).
+- Las cuatro opciones, de la misma categoría gramatical y longitud parecida. Una sola válida. Letras repartidas.
+- Explica en español la regla, la pista que da la respuesta y por qué falla cada distractor.
+```
+
+## 3. Chat (opcional: simulacros y dudas)
 
 **Dónde:** pégalo una vez en cada cuaderno, en Chat → icono de ajustes → «Configurar chat» → «Personalizado». Ocupa 6.218 caracteres y el límite es de 10.000. Deduce el bloque por las fuentes del cuaderno.
 

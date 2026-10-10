@@ -53,7 +53,7 @@ Para que la app encuentre la guía y los ejemplos, copia `estilo/` dentro de `AD
 
 | Fichero | Para qué |
 |---|---|
-| `PROMPT_MAESTRO.md` | Los dos textos que hay que copiar. El prompt 1 es para el informe interactivo del Studio: uno por norma, cambiando solo la línea `NORMA:`. El prompt 2, opcional, va una vez en las instrucciones del chat de cada cuaderno, para simulacros y corrección de fallos. |
+| `PROMPT_MAESTRO.md` | Los textos que hay que copiar. El prompt 1 es para el informe interactivo del Studio, uno por norma, cambiando solo la línea `NORMA:`. El prompt 2 es el informe interactivo de inglés, cambiando solo la línea `FOCO:`. El prompt 3, opcional, va una vez en las instrucciones del chat de cada cuaderno, para simulacros y corrección de fallos. |
 | `01_radiografia_tribunal.md` | Cómo pregunta el Tribunal: cifras, algoritmo, plantillas de enunciado, recetas de distractores, mapa de contenidos, trampas, inglés y estrategia. Se sube como fuente. |
 | `02_preguntas_oficiales_anotadas.md` | Las 180 preguntas oficiales (126 de conocimientos y 54 de inglés) con su clave y su anotación. Se sube como fuente. |
 
