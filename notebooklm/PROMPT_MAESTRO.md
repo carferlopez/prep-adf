@@ -1,10 +1,11 @@
 # Prompts maestros
 
-Hay tres y cada uno tiene un papel:
+Hay cuatro y cada uno tiene un papel:
 
 1. **Informe interactivo de normas**: lo principal. Uno por norma y sirve para aprender y practicar.
 2. **Informe interactivo de inglés**: lo mismo para el test de inglés.
-3. **Chat**: opcional. Para simulacros cronometrados del bloque y para dudas sueltas.
+3. **Informe interactivo de psicotécnico**: lo mismo para el test psicométrico.
+4. **Chat**: opcional. Para simulacros cronometrados del bloque y para dudas sueltas.
 
 ## 1. Informe interactivo de normas (uno por norma)
 
@@ -58,7 +59,7 @@ CÓMO PREGUNTA EL TRIBUNAL (cúmplelo en todos los tests)
 
 ## 2. Informe interactivo de inglés
 
-**Dónde:** en el cuaderno de Inglés, Studio → Informes → informe interactivo → pega el texto.
+**Dónde:** en el cuaderno de Inglés y psicotécnico, Studio → Informes → informe interactivo → pega el texto.
 
 **Fuentes marcadas:** las dos guías.
 
@@ -105,7 +106,61 @@ CÓMO SON LOS ÍTEMS DEL TRIBUNAL (cúmplelo en todos los tests)
 - Explica en español la regla, la pista que da la respuesta y por qué falla cada distractor.
 ```
 
-## 3. Chat (opcional: simulacros y dudas)
+## 3. Informe interactivo de psicotécnico
+
+**Dónde:** en el cuaderno de Inglés y psicotécnico, Studio → Informes → informe interactivo → pega el texto.
+
+**Fuentes marcadas:** las dos guías. Solo aportan los datos del examen (número de preguntas, puntuación y tiempo).
+
+**Qué cambias:** solo la primera línea (`FOCO:`). Puedes poner `todo el test`, un tipo concreto como `series numéricas`, `figuras` o `problemas`, o `mis fallos: …`.
+
+**Longitud:** 3.924 caracteres de 5.000.
+
+El test psicométrico lo elabora Psicólogos Empresariales y Asociados y no se publica con las plantillas, así que no hay preguntas oficiales que analizar. Este prompt parte de lo confirmado en las instrucciones de los cuadernillos (18 preguntas, 40 puntos, Aciertos − Errores/3 y tiempo compartido) y de los tipos de ejercicio que describen las academias, que no están confirmados. Las figuras salen dibujadas con símbolos: practica también con series de figuras impresas.
+
+```text
+FOCO: [todo el test, o un tipo concreto: «series numéricas», «figuras», «razonamiento verbal», «problemas», «mis fallos: …»]
+
+Crea una guía de estudio interactiva para el test psicotécnico de la prueba común de Adif (OEP 2026). Español de España, directo.
+
+LO QUE SE SABE DEL TEST (instrucciones oficiales de los cuadernillos de 2023 y 2025)
+- Lo elabora Psicólogos Empresariales y Asociados y no se publica, así que no hay preguntas oficiales. Los ítems de práctica los generas tú, todos nuevos.
+- 18 preguntas (15 + 3 de reserva), 4 opciones y una correcta. Corrección: Aciertos − Errores/3; en blanco no resta.
+- Vale 40 de 200 puntos. Mínimo: el 40 %, unos 6 aciertos netos de 15.
+- Comparte tiempo con inglés y conocimientos: 45 minutos para 54 preguntas en 2025 (60 para 72 en 2023). Ritmo objetivo: 50 segundos por ítem o menos.
+- Según las academias, suele incluir operaciones y problemas numéricos, series, figuras, relaciones verbales y comprensión de textos. No está confirmado: tómalo como orientación.
+- Las fuentes del cuaderno solo sirven para estos datos del examen. No hagas preguntas sobre ellas, ni sobre leyes o inglés.
+
+FAMILIAS DE ÍTEMS (un módulo por familia; si el FOCO es concreto, solo esa)
+1. Series numéricas: sumas o productos constantes, diferencias de segundo orden, series alternas o intercaladas, potencias, Fibonacci.
+2. Series de letras y alfanuméricas: posición en el alfabeto español (27 letras, con ñ, salvo que el enunciado diga otra cosa), saltos y series dobles.
+3. Cálculo y problemas: porcentajes, proporciones y reglas de tres, fracciones, velocidad, tiempo y distancia, mezclas, edades y repartos, cálculo mental rápido.
+4. Razonamiento verbal: sinónimos, antónimos, analogías («A es a B como C es a…»), palabra que no encaja, comprensión de un texto breve.
+5. Razonamiento lógico: silogismos con «todos / algunos / ninguno», orden y posiciones, verdad o mentira.
+6. Razonamiento abstracto: series y matrices de figuras. Como no puedes dibujarlas con precisión, represéntalas con símbolos (▲ ● ■ ◆, flechas, giros de 90°) y explica la regla: giro, suma o resta de elementos, alternancia o desplazamiento.
+7. Atención y percepción: comparar códigos o cadenas, contar elementos o encontrar el diferente, contra el reloj.
+
+ESTRUCTURA
+1. Mapa en una pantalla: las familias, cómo reconocer cada una en 5 segundos y en qué orden atacarlas (primero las más rápidas).
+2. Un módulo por familia, con:
+   - Los patrones típicos, cada uno con un ejemplo resuelto paso a paso.
+   - Trucos de velocidad: diferencias sucesivas, estimar antes de calcular, descartar por la última cifra o por paridad, probar las opciones hacia atrás.
+   - Los errores frecuentes y cómo evitarlos.
+   - Un minitest de 5 ítems, de menos a más difícil, con corrección inmediata y el tiempo objetivo de cada uno.
+   Elige tú el formato que mejor fije cada familia: tarjetas para patrones y fórmulas, infografía con el método de resolución, tablas de cálculo mental (porcentajes, cuadrados, fracciones habituales), cuestionario cronometrado.
+3. Test final de 18 ítems (15 + 3 de reserva) que mezcle las familias, para hacer en unos 15 minutos. Corrección con Aciertos − Errores/3 y, para cada ítem, la regla, la resolución rápida y por qué fallan las demás opciones.
+4. Plan de entrenamiento de 2 semanas, a 10 minutos al día, y un repaso exprés de patrones y trucos para la víspera.
+
+CÓMO DEBEN SER LOS ÍTEMS
+- 4 opciones y una sola correcta, comprobada. Si una serie admite dos reglas, cambia el ítem.
+- Distractores verosímiles: el resultado de aplicar mal la regla, de un error de cálculo típico o de seguir solo una parte del patrón.
+- Dificultad progresiva: 30 % fáciles, 50 % medios y 20 % difíciles.
+- Que se resuelvan sin calculadora en menos de 60 segundos.
+- Letras de la correcta repartidas.
+- Recuérdame la estrategia: si descarto al menos una opción, contesto; si no descarto ninguna, la dejo en blanco.
+```
+
+## 4. Chat (opcional: simulacros y dudas)
 
 **Dónde:** pégalo una vez en cada cuaderno, en Chat → icono de ajustes → «Configurar chat» → «Personalizado». Ocupa 6.218 caracteres y el límite es de 10.000. Deduce el bloque por las fuentes del cuaderno.
 
