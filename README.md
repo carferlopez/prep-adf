@@ -10,6 +10,7 @@ Preparación de la OEP 2026 de ADIF (Técnico: Gestión y Comunicación). Incluy
 | `estilo/adn_tribunal.md` | Guía de estilo del Tribunal, sacada de 559 preguntas oficiales de 2022 a 2025. |
 | `estilo/ejemplos.json` | Corpus de esas preguntas oficiales, con la respuesta de la plantilla correctora cuando existe. |
 | `banco/*.json` | Preguntas redactadas y revisadas por tema, cada una con su cita literal del BOE. |
+| `simulacro/` | Plantilla del informe interactivo (cuadernillo de examen con corrección A − E/3). |
 | `scripts/` | Extracción de exámenes, validación del banco e importación en la app. |
 
 ## Uso
@@ -31,6 +32,19 @@ python3 scripts/extraer_examenes.py ex2025.pdf:2025 ex2024.pdf:2024 … -o estil
 ```
 
 Para que la app encuentre la guía y los ejemplos, copia `estilo/` dentro de `ADIF 2026/APP/` (o deja la app dentro de este repositorio).
+
+## Simulacro interactivo (una o varias normas)
+
+```bash
+# Una norma
+python3 scripts/generar_simulacro.py banco/gestion_02_ley_47_2003.json -o tmp/simulacro.html
+# Varias normas a la vez, agrupadas por norma
+python3 scripts/generar_simulacro.py banco/*.json -o tmp/simulacro.html
+# Examen mezclado: 18 preguntas sorteadas entre todas las normas (15 + 3 de reserva)
+python3 scripts/generar_simulacro.py banco/*.json --aleatorio 18 -o tmp/examen.html
+```
+
+Con más de una norma, la página añade filtros por norma (la nota siempre cuenta todas las preguntas), etiquetas de color en cada pregunta, secciones por norma y, al corregir, el desglose de la nota por norma con la más floja señalada. Tras corregir, «Solo fallos y blancos» deja únicamente lo que toca repasar. Los `id` repetidos entre bancos se desambiguan solos.
 
 ## Generador de preguntas con Gemini
 
